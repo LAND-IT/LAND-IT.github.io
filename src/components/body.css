@@ -1,0 +1,124 @@
+/* Estilos gerais */
+.container {
+    display: flex;
+    flex-direction: column;
+    /*padding-top: 60px;*/
+}
+
+/* Botão do menu no mobile */
+.menu-toggle {
+    display: none; /* Esconde no desktop */
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Alinhado à direita */
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu {
+    position: sticky;
+    /*top: 60px; !* Ajuste este valor para a altura do seu header *!*/
+    padding: 10px 0;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+
+.menu.fixed {
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease;
+}
+
+.content {
+    margin-top: 20px; /* Espaço entre o menu e o conteúdo */
+}
+
+/* Lista do menu */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    display: flex;
+}
+
+/* Itens do menu */
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Links do menu */
+.menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Destaque do item ativo */
+.menu a.active {
+    /*background: #007BFF;*/
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Espaço para o conteúdo (evita sobreposição do menu) */
+/*.content {*/
+/*    margin-right: 220px; !* Cria espaço para o menu *!*/
+/*    width: calc(100% - 220px); !* Ajusta largura para ocupar o resto da tela *!*/
+/*    padding: 20px;*/
+
+/*}*/
+
+/* Seções da página */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESPONSIVIDADE PARA MOBILE */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    /* Exibir botão no mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Esconder menu por padrão no mobile */
+    .menu {
+        right: -200px; /* Esconde à direita */
+        left: auto;
+        width: 180px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    /* Mostrar menu quando aberto */
+    .menu.open {
+        right: 0;
+    }
+
+    /* Ajustar conteúdo para ocupar a tela toda no mobile */
+    .content {
+        margin-right: 0;
+        width: 100%;
+    }
+}
