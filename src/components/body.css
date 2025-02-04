@@ -2,17 +2,16 @@
 .container {
     display: flex;
     flex-direction: column;
-    /*padding-top: 60px;*/
 }
 
 /* Botão do menu no mobile */
 .menu-toggle {
-    display: none; /* Esconde no desktop */
+    display: none;
     position: fixed;
     top: 15px;
-    right: 15px; /* Alinhado à direita */
-    background: #007BFF;
-    color: white;
+    left: 15px; /* Agora está no lado esquerdo */
+    background: white;
+    color: var(--primary-color);
     border: none;
     padding: 10px 15px;
     font-size: 20px;
@@ -21,22 +20,23 @@
     z-index: 1000;
 }
 
+/* Menu */
 .menu {
     position: sticky;
-    /*top: 60px; !* Ajuste este valor para a altura do seu header *!*/
+    top: auto;
     padding: 10px 0;
     z-index: 100;
     transition: top 0.3s ease;
+    background-color: white;
 }
 
+/* Menu fixo após scroll */
 .menu.fixed {
     position: fixed;
     top: 0;
-    transition: top 0.3s ease;
-}
-
-.content {
-    margin-top: 20px; /* Espaço entre o menu e o conteúdo */
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--grey);
 }
 
 /* Lista do menu */
@@ -44,8 +44,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 20px;
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Itens do menu */
@@ -65,18 +66,9 @@
 
 /* Destaque do item ativo */
 .menu a.active {
-    /*background: #007BFF;*/
     color: var(--primary-color);
     font-weight: bold;
 }
-
-/* Espaço para o conteúdo (evita sobreposição do menu) */
-/*.content {*/
-/*    margin-right: 220px; !* Cria espaço para o menu *!*/
-/*    width: calc(100% - 220px); !* Ajusta largura para ocupar o resto da tela *!*/
-/*    padding: 20px;*/
-
-/*}*/
 
 /* Seções da página */
 .section {
@@ -105,20 +97,39 @@ html {
 
     /* Esconder menu por padrão no mobile */
     .menu {
-        right: -200px; /* Esconde à direita */
-        left: auto;
-        width: 180px;
-        transition: right 0.3s ease-in-out;
+        position: fixed;
+        left: -300px; /* Esconde à esquerda */
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        border-right: 2px solid var(--grey);
+        transition: left 0.3s ease-in-out;
     }
 
     /* Mostrar menu quando aberto */
     .menu.open {
-        right: 0;
+        left: 0;
     }
 
-    /* Ajustar conteúdo para ocupar a tela toda no mobile */
-    .content {
-        margin-right: 0;
-        width: 100%;
+    /* Exibir botão de fechar dentro do menu */
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Menu mobile em coluna */
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
