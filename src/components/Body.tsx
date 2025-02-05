@@ -7,6 +7,7 @@ export default function Body() {
 
     const sections = [
         { id: "presentation", label: t("sections.presentation") },
+        { id: "multimedia", label: t("sections.multimedia") },
         { id: "related_projects", label: t("sections.related_projects") },
         { id: "team", label: t("sections.team") },
     ];
@@ -20,7 +21,7 @@ export default function Body() {
             let currentSection = activeSection;
 
             // Verifica se o componente irmão saiu da tela
-            const headerElement = document.querySelector(".header") as HTMLElement;
+            const headerElement = document.querySelector(".ghost") as HTMLElement;
             if (headerElement) {
                 const headerBottom = headerElement.getBoundingClientRect().bottom;
                 setIsMenuFixed(headerBottom <= 0);
@@ -51,8 +52,8 @@ export default function Body() {
 
     return (
         <div className="container">
-            {/* Componente Irmão */}
-            {window.innerWidth > 768 && <div className="header"></div>}
+            {/* Componente Fantasma */}
+            {window.innerWidth > 768 && <div className={"ghost"}></div>}
 
             {/* Botão do menu no mobile */}
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

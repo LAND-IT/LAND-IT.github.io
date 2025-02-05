@@ -49,11 +49,6 @@
     gap: 20px;
 }
 
-/* Itens do menu */
-.menu li {
-    margin-bottom: 10px;
-}
-
 /* Links do menu */
 .menu a {
     display: block;

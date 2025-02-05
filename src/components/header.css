@@ -1,3 +1,47 @@
-.header {
+.languages {
+    right: 0
+}
 
+.selectedLanguage, .optionSelected{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px
+}
+
+.dropdownLanguages{
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.dropdownLanguages .p-dropdown-trigger{
+    width: 15px;
+    padding: 2px;
+}
+
+.dropdownLanguages .p-inputtext{
+    padding: 8px;
+}
+
+.header-image{
+    height: 500px;
+    width: 100%;
+    background-image: url(/public/forest3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .dropdownLanguages{
+        top: 22px;
+    }
+
+    .header-image{
+        height: 300px;
+
+    }
 }
