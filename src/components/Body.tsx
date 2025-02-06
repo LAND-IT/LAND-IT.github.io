@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
 import "./body.css";
 import { useTranslation } from "react-i18next";
+import {Presentation} from "./sections/Presentation.tsx";
+import {Team} from "./sections/Team.tsx";
+import {Fade} from "react-awesome-reveal";
+import Multimedia from "./sections/Multimedia.tsx";
+import RelatedProjects from "./sections/RelatedProjects.tsx";
 
 export default function Body() {
     const { t } = useTranslation();
 
     const sections = [
-        { id: "presentation", label: t("sections.presentation") },
-        { id: "multimedia", label: t("sections.multimedia") },
-        { id: "related_projects", label: t("sections.related_projects") },
-        { id: "team", label: t("sections.team") },
+        { id: "presentation", label: t("sections.presentation"), body: <Presentation/> },
+        { id: "multimedia", label: t("sections.multimedia"), body: <Multimedia/> },
+        { id: "related_projects", label: t("sections.related_projects"), body: <RelatedProjects/> },
+        { id: "team", label: t("sections.team"), body: <Team/> },
     ];
 
     const [activeSection, setActiveSection] = useState<string>("presentation");
@@ -82,7 +87,10 @@ export default function Body() {
             <div className="content">
                 {sections.map((section) => (
                     <section key={section.id} id={section.id} className="section">
+                        <Fade duration={2500}>
                         <h2>{section.label.toUpperCase()}</h2>
+                        {section.body}
+                        </Fade>
                     </section>
                 ))}
             </div>
