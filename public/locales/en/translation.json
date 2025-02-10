@@ -31,7 +31,13 @@
         "title": "Master’s Thesis: LAND IT - Scenario Analysis and Visualisation",
         "date": "Ongoing",
         "description": "LAND IT includes some dashboards with statistical data developed in the early stages of the project. Currently, some of these charts are outdated, while others fail to cover relevant topics. Thus, the objective of this thesis is to enhance existing dashboards and propose new ones."
+      },
+      {
+        "title": "Master’s Thesis: LAND IT – Development of an Extension System",
+        "date": "Ongoing",
+        "description": "As LAND IT is a growing platform that continuously evolves alongside the development of AIGP, new functionalities are always required. To facilitate this ongoing integration, the objective of this thesis is to develop an extension system that enables the modular addition of new features without modifying the system’s core code."
       }
+
     ],
     "access": "Access"
   },
@@ -49,6 +55,9 @@
     "contacts": "Contacts",
     "links": "Useful Links",
     "entities": "Collaborating Entities",
-    "podcast": "AI-generated Podcast about LAND IT"
+    "podcast": "AI-generated Podcast about LAND IT",
+    "LAND-IT": "LAND IT Platform",
+    "consultation": "OIGP under public consultation",
+    "oigp": "How to build an OIGP?"
   }
 }

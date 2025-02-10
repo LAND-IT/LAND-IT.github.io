@@ -31,6 +31,11 @@
         "title": "Tese de Mestrado: LAND IT - Análise e Visualização de Cenários",
         "date": "Em curso",
         "description": "O LAND IT contém alguns dashboards com dados estatísticos, feitos no início do projeto. Atualmente, alguns destes gráficos encontram-se desatualizados e outros temas nem são abordados pelas estatísticas. Assim sendo, o objetivo desta tese é melhorar os dashboards existentes e propor novos."
+      },
+      {
+        "title": "Tese de Mestrado: LAND IT - Desenvolvimento de um Sistema de Extensões",
+        "date": "Em curso",
+        "description": "Sendo o LAND IT uma plataforma em crescimento e que tenta sempre acompanhar o processo de desenvolvimento das AIGP são sempre necessárias novas funcionalidades. Para facilitar esta constante integração, o objetivo deste tema é criar um sistema de extensões para que seja possível adicionar novas funcionalidades de forma modular e sem alterar o código base do sistema."
       }
     ],
     "access": "Aceder"
@@ -49,6 +54,9 @@
     "contacts": "Contactos",
     "links": "Links Úteis",
     "entities": "Entidades Colaboradoras",
-    "podcast": "Podcast gerado por IA sobre o LAND IT"
+    "podcast": "Podcast gerado por IA sobre o LAND IT",
+    "LAND-IT": "Plataforma LAND IT",
+    "consultation": "OIGP em consulta pública",
+    "oigp": "Como construir uma OIGP?"
   }
 }

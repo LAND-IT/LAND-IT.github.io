@@ -3,6 +3,7 @@ import {Dropdown} from "primereact/dropdown";
 import {useState} from "react";
 import i18n from "i18next";
 import {Icon} from "@iconify/react";
+import {Fade} from "react-awesome-reveal";
 
 interface Language {
     label: string,
@@ -39,7 +40,9 @@ export const Header = () => {
 
 
     return (<>
-            <h1 className={"header-image"}>LAND IT</h1>
+            <Fade duration={500}>
+                <h1 className={"header-image"}>LAND IT</h1>
+            </Fade>
             <div className={"languages"}>
                 <Dropdown value={selectedLanguage}
                           options={items}
