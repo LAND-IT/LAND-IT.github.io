@@ -34,12 +34,12 @@ export const Footer = () => {
             <div className={"footer-sec"}>
                 <h4>{t("footer.entities")}</h4>
                 <div className={"logos-row"}>
-                    <img className={"logo"} src={"public/images/aflomacao.png"}/>
-                    <img className={"logo"} src={"public/azr.png"}/>
+                    <img className={"logo"} src={"images/aflomacao.png"}/>
+                    <img className={"logo"} src={"images/azr.png"}/>
                 </div>
                 <div className={"logos-row"}>
-                    <img className={"logo"} src={"public/images/fct.png"}/>
-                    <img className={"logo"} src={"public/images/macao.png"}/>
+                    <img className={"logo"} src={"images/fct.png"}/>
+                    <img className={"logo"} src={"images/macao.png"}/>
                 </div>
             </div>
         </div>

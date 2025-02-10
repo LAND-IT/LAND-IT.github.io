@@ -13,7 +13,7 @@ export const Presentation = () => {
                 {items.map((item) => {
                     return <>{item}<br/></>})}
             </span>
-            <img className={"image"} src={"public/images/fire.jpg"} alt={"LAND IT"}/>
+            <img className={"image"} src={"images/fire.jpg"} alt={"LAND IT"}/>
         </div>
     )
 }
