@@ -14,19 +14,19 @@ export default function Multimedia() {
     const media = [
         {
             name: t('multimedia.main-page'),
-            image: 'public/multimedia/main-menu.png'
+            image: 'multimedia/main-menu.png'
         },
         {
             name: t('multimedia.stats1'),
-            image: 'public/multimedia/stats.png'
+            image: 'multimedia/stats.png'
         },
         {
             name: t('multimedia.stats2'),
-            image: 'public/multimedia/stats2.png'
+            image: 'multimedia/stats2.png'
         },
         {
             name: t('multimedia.transformations'),
-            image: 'public/multimedia/transformations.png'
+            image: 'multimedia/transformations.png'
         }
     ];
 
