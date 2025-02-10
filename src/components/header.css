@@ -29,7 +29,7 @@
 .header-image{
     height: 500px;
     width: 100%;
-    background-image: url(/public/forest2.jpg);
+    background-image: url(/public/images/forest2.jpg);
     background-position: center;
     background-size: cover;
     margin: 0;
