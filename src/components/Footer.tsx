@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className={"footer"}>
             <div className={"footer-sec"}>
                 <h4>{t("footer.contacts")}</h4>
-                <Icon icon={"iconamoon:email"} height={"30px"} onClick={() => window.open('mailto:land.it.web.app@gmail.com', '_blank')}/>
+                <Icon className={"contact"} icon={"iconamoon:email"} height={"30px"} onClick={() => window.open('mailto:land.it.web.app@gmail.com', '_blank')}/>
             </div>
             <div style={{gap: "10px"}} className={"footer-sec"}>
                 <h4>{t("footer.links")}</h4>
