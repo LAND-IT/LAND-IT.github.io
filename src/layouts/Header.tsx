@@ -18,7 +18,7 @@ export const Header = () => {
         {label: "English", code: 'en', icon: "emojione-v1:flag-for-united-kingdom"}
     ]
 
-    const [selectedLanguage, setSelectedLanguage] = useState(items[0]);
+    const [selectedLanguage, setSelectedLanguage] = useState(items[1]);
 
     const selectedCountryTemplate = (option: Language) => {
         return (
