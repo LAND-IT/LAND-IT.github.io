@@ -22,15 +22,15 @@ export default function useMultimedia() {
             image: 'multimedia/transformations.png'
         },
         {
-            name: t('multimedia.transformations'),
+            name: t('multimedia.addPolygon'),
             image: 'multimedia/add_polygon_to_POSP.mp4'
         },
         {
-            name: t('multimedia.transformations'),
+            name: t('multimedia.applyFilters'),
             image: 'multimedia/apply filters.mp4'
         },
         {
-            name: t('multimedia.transformations'),
+            name: t('multimedia.polygonTransformation'),
             image: 'multimedia/set polygon transformation.mp4'
         }
     ];

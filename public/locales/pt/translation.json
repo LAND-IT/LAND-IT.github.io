@@ -48,7 +48,10 @@
     "main-page": "Edição de Cenários",
     "stats1": "Estatísticas - Áreas de Ocupação do Solo",
     "stats2": "Estatísticas - Transformações",
-    "transformations": "Edição de Transformações"
+    "transformations": "Edição de Transformações",
+    "addPolygon": "Adicição de Polígono à POSP",
+    "applyFilters": "Aplicação de Filtros",
+    "polygonTransformation": "Definir Transformação de um Polígono"
   },
   "footer": {
     "contacts": "Contactos",

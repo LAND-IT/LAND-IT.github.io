@@ -49,7 +49,10 @@
     "main-page": "Scenario Editing",
     "stats1": "Statistics - Land Use Areas",
     "stats2": "Statistics - Transformations",
-    "transformations": "Transformation Editing"
+    "transformations": "Transformation Editing",
+    "addPolygon": "Add Polygon to POSP",
+    "applyFilters": "Apply Filters",
+    "polygonTransformation": "Define Polygon Transformation"
   },
   "footer": {
     "contacts": "Contacts",
