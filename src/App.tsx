@@ -1,7 +1,7 @@
 import './App.css'
-import {Header} from "./components/Header.tsx";
-import {Footer} from "./components/Footer.tsx";
-import Body from "./components/Body.tsx";
+import {Header} from "./layouts/Header.tsx";
+import {Footer} from "./layouts/Footer.tsx";
+import Body from "./pages/Body.tsx";
 import {I18nextProvider} from "react-i18next";
 import i18n from "./i18n";
 import {PrimeReactProvider} from "primereact/api";
