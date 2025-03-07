@@ -1,6 +1,5 @@
 "use client"
 import styles from "./page.module.css"
-import { useParams } from 'next/navigation';
 import { useEffect, useState, useMemo } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Presentation } from '@/components/layouts/Presentation';
@@ -11,12 +10,8 @@ import {Team } from '@/components/presentational/Team';
 import { useTranslations } from 'next-intl';
 
 export default function Page() {
-  const params = useParams();
-  const locale = params.locale as string;
-
   const t = useTranslations();
 
- 
   const sections = useMemo(() => [
     { id: "presentation", label: t('sections.presentation'), body: <Presentation /> },
     { id: "multimedia", label: t('sections.multimedia'), body: <Multimedia /> },

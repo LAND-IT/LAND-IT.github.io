@@ -1,7 +1,7 @@
 import 'primereact/resources/themes/lara-light-green/theme.css';
 import 'primereact/resources/primereact.min.css';
 import '@/app/globals.css';
-import { Locale, i18nConfig } from '@/i18n';
+import { Locale } from '@/i18n/routing'
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import { PrimeReactProvider } from 'primereact/api';
@@ -13,11 +13,6 @@ import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 
-
-
-export async function generateStaticParams() {
-  return i18nConfig.locales.map((locale: Locale) => ({ locale }));
-}
 
 // Metadata para SEO
 export const metadata: Metadata = {
@@ -75,7 +70,7 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 

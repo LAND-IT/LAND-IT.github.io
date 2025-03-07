@@ -5,7 +5,6 @@ import {useState, useEffect} from "react";
 import {Icon} from "@iconify/react";
 import {Fade} from "react-awesome-reveal";
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
 
 interface Language {
     label: string,
@@ -65,7 +64,7 @@ export const Header = ({ lang }: { lang: string }) => {
         );
     };
 
-    const handleLanguageChange = (e: any) => {
+    const handleLanguageChange = (e: {value: Language}) => {
     
         if (!e || !e.value || !e.value.code) return;
         
