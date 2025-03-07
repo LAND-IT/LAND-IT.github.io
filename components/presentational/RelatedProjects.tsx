@@ -3,15 +3,26 @@ import {Button} from "primereact/button";
 import {Timeline} from "primereact/timeline";
 import {Icon} from "@iconify/react";
 import './projects.css';
-import {TimelineEvent} from "../../Definitions.ts";
-import useProjects from "../containers/useProjects.ts";
-import {useTranslation} from "react-i18next";
+import {TimelineEvent} from "../../Definitions";
+import useProjects from "../../hooks/useProjects";
+import {useTranslations} from "next-intl";
+import { useState, useEffect } from 'react';
 
 export default function RelatedProjects() {
+    const t = useTranslations();
+    const events: TimelineEvent[] = useProjects();
+    const [isMobile, setIsMobile] = useState(false);
 
-    const {t} = useTranslation();
+    useEffect(() => {
+        setIsMobile(window.innerWidth <= 768);
+        
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
 
-    const events: TimelineEvent[] = useProjects()
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const customizedMarker = (item: TimelineEvent) => {
         return (
@@ -21,7 +32,7 @@ export default function RelatedProjects() {
 
     const customizedContent = (item: TimelineEvent) => {
         return (
-            <Card header={window.innerWidth <= 768 &&
+            <Card header={isMobile &&
                 <Icon style={{color: item.color}} height={"30px"} icon={item.icon}/>}
                   title={item.title} subTitle={<span>{item.author} <br/> {item.date} </span>}>
                 <p>{item.description}</p>
@@ -33,11 +44,16 @@ export default function RelatedProjects() {
 
     return (
         <div className="card">
-            {window.innerWidth > 768 &&
+            {!isMobile &&
                 <Timeline value={events} align="alternate" className="customized-timeline" marker={customizedMarker}
                           content={customizedContent}/>}
-            {window.innerWidth <= 768 && <div className={"cards"}>
-                {events.map((event) => customizedContent(event))} </div>}
+            {isMobile && <div className={"cards"}>
+                {events.map((event, index) => (
+                    <div key={event.title || index}>
+                        {customizedContent(event)}
+                    </div>
+                ))}
+            </div>}
         </div>
-    )
-}
+    );
+} 

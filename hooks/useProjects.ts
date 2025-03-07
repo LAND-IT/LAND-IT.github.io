@@ -1,9 +1,10 @@
-import {Status} from "../../Definitions.ts";
-import {useTranslation} from "react-i18next";
+
+import {Status} from "../Definitions";
+import {useTranslations} from "next-intl";
 
 export default function useProjects() {
 
-    const {t} = useTranslation();
+    const t = useTranslations();
 
     return [
         {

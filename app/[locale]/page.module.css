@@ -5,7 +5,7 @@
 }
 
 /* Botão do menu no mobile */
-.menu-toggle {
+.menuToggle {
     display: none;
     position: fixed;
     top: 15px;
@@ -32,7 +32,7 @@
 }
 
 /* Menu fixo após scroll */
-.menu.fixed {
+.fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@
 }
 
 /* Lista do menu */
-.menu ul {
+.menuList {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@
 }
 
 /* Links do menu */
-.menu a {
+.menuLink {
     display: block;
     padding: 10px;
     border-radius: 5px;
@@ -61,7 +61,7 @@
 }
 
 /* Destaque do item ativo */
-.menu a.active {
+.active {
     color: var(--primary-color);
     font-weight: bold;
 }
@@ -77,8 +77,15 @@
 }
 
 /* Scroll suave */
-html {
+.html {
     scroll-behavior: smooth;
+}
+
+/* Componente fantasma */
+.ghost {
+    height: 1px;
+    width: 100%;
+    visibility: hidden;
 }
 
 /* RESPONSIVIDADE PARA MOBILE */
@@ -88,7 +95,7 @@ html {
     }
 
     /* Exibir botão no mobile */
-    .menu-toggle {
+    .menuToggle {
         display: block;
     }
 
@@ -108,12 +115,12 @@ html {
     }
 
     /* Mostrar menu quando aberto */
-    .menu.open {
+    .open {
         left: 0;
     }
 
     /* Exibir botão de fechar dentro do menu */
-    .menu-close {
+    .menuClose {
         display: block;
         position: absolute;
         top: 10px;
@@ -125,8 +132,8 @@ html {
     }
 
     /* Menu mobile em coluna */
-    .menu ul {
+    .menuList {
         flex-direction: column;
         gap: 10px;
     }
-}
+} 
