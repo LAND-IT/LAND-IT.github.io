@@ -5,15 +5,15 @@ import {useState, useEffect} from "react";
 import {Icon} from "@iconify/react";
 import {Fade} from "react-awesome-reveal";
 import { useRouter } from 'next/navigation';
-import { Locale } from "@/i18n";
-        
+import { useTranslations } from 'next-intl';
+
 interface Language {
     label: string,
     code: string,
     icon: string
 }
 
-export const Header = ({ lang }: { lang: Locale }) => {
+export const Header = ({ lang }: { lang: string }) => {
     const router = useRouter();
     
 

@@ -5,11 +5,11 @@ import {Icon} from "@iconify/react";
 import './projects.css';
 import {TimelineEvent} from "../../Definitions";
 import useProjects from "../../hooks/useProjects";
-import {useTranslation} from "react-i18next";
+import {useTranslations} from "next-intl";
 import { useState, useEffect } from 'react';
 
 export default function RelatedProjects() {
-    const {t} = useTranslation();
+    const t = useTranslations();
     const events: TimelineEvent[] = useProjects();
     const [isMobile, setIsMobile] = useState(false);
 
@@ -48,7 +48,12 @@ export default function RelatedProjects() {
                 <Timeline value={events} align="alternate" className="customized-timeline" marker={customizedMarker}
                           content={customizedContent}/>}
             {isMobile && <div className={"cards"}>
-                {events.map((event) => customizedContent(event))} </div>}
+                {events.map((event, index) => (
+                    <div key={event.title || index}>
+                        {customizedContent(event)}
+                    </div>
+                ))}
+            </div>}
         </div>
     );
 } 

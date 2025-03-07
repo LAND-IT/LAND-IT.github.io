@@ -1,8 +1,13 @@
+
+
+const createNextIntlPlugin = require('next-intl/plugin');
+ 
+const withNextIntl = createNextIntlPlugin();
+ 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ensure static files like sitemap.xml and robots.txt are served correctly
-  poweredByHeader: false,
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+    poweredByHeader: false,
+    reactStrictMode: true,
+};
+ 
+module.exports = withNextIntl(nextConfig);

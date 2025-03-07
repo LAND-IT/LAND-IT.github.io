@@ -1,15 +1,8 @@
 import styles from './footer.module.css'
 import { Icon } from "@iconify/react";
-import { getTranslation } from '@/lib/i18n/getTranslation';
-import { Locale } from '@/i18n';
-
-type FooterProps = {
-    locale: Locale;
-}   
-
-export const Footer = async ({locale}: FooterProps) => {
-    const t = await getTranslation(locale);
-    
+import { getTranslations } from 'next-intl/server';
+export const Footer = async () => {
+    const t = await getTranslations();
     return (
         <div className={styles.footer}>
             <div className={styles.footerSec}>

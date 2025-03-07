@@ -8,6 +8,13 @@ import { PrimeReactProvider } from 'primereact/api';
 import { Footer } from '@/components/layouts/Footer';
 import { Header } from '@/components/layouts/Header';
 
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {routing} from '@/i18n/routing';
+
+
+
 export async function generateStaticParams() {
   return i18nConfig.locales.map((locale: Locale) => ({ locale }));
 }
@@ -68,6 +75,13 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
 
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  const messages = await getMessages();
+ 
+
   return (
     <html lang={locale} className={GeistSans.className}>
       <head>
@@ -77,9 +91,11 @@ export default async function RootLayout({
       </head>
       <body>
         <PrimeReactProvider>
-          <Header lang={locale as Locale} />
-          <main>{children}</main>
-          <Footer locale={locale as Locale} />
+          <NextIntlClientProvider messages={messages}>
+            <Header lang={locale as Locale} />
+            <main>{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
         </PrimeReactProvider>
       </body>
     </html>

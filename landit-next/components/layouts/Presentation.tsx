@@ -1,18 +1,17 @@
-"use client"
 import styles from "./presentation.module.css"
-import {useTranslation} from "react-i18next";
+import {useTranslations, useMessages} from "next-intl";
 import React from "react";
 
 export const Presentation = () => {
 
-    const {t} = useTranslation();
-
-    const items = t(`presentation`, { returnObjects: true }) as string[];
+    const t = useTranslations();
+    const messages = useMessages();
+    const items = messages?.presentation as unknown as string[];
 
     return (
         <div className={styles.mainPresentation}>
             <span className={styles.text}>
-                {items.map((item, index) => {
+               {items && items.map((item: string, index: number) => {
                     return <React.Fragment key={index}>{item}<br/></React.Fragment>
                 })}
             </span>

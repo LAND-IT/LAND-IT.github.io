@@ -1,7 +1,5 @@
 "use client"
 import styles from "./page.module.css"
-import '@/lib/i18n/i18n-client'; // Importar a configuração do i18next
-import { useTranslation } from 'react-i18next';
 import { useParams } from 'next/navigation';
 import { useEffect, useState, useMemo } from 'react';
 import { Fade } from 'react-awesome-reveal';
@@ -10,23 +8,20 @@ import Multimedia from '@/components/presentational/Multimedia';
 import RelatedProjects from '@/components/presentational/RelatedProjects';
 import {Team } from '@/components/presentational/Team';
 
+import { useTranslations } from 'next-intl';
 
 export default function Page() {
   const params = useParams();
   const locale = params.locale as string;
-  const { t, i18n } = useTranslation();
-  
-  // Mudar o idioma quando o locale mudar
-  useEffect(() => {
-    i18n.changeLanguage(locale);
-  }, [locale, i18n]);
-  
+
+  const t = useTranslations();
+
  
   const sections = useMemo(() => [
-    { id: "presentation", label: t('sections.presentation', 'sections'), body: <Presentation locale={locale} /> },
-    { id: "multimedia", label: t('sections.multimedia', 'sections'), body: <Multimedia /> },
-    { id: "related_projects", label: t('sections.related_projects', 'sections'), body: <RelatedProjects /> },
-    { id: "team", label: t('sections.team', 'sections'), body: <Team /> },
+    { id: "presentation", label: t('sections.presentation'), body: <Presentation /> },
+    { id: "multimedia", label: t('sections.multimedia'), body: <Multimedia /> },
+    { id: "related_projects", label: t('sections.related_projects'), body: <RelatedProjects /> },
+    { id: "team", label: t('sections.team'), body: <Team /> },
   ], [t]);
 
   const [activeSection, setActiveSection] = useState<string>("presentation")
