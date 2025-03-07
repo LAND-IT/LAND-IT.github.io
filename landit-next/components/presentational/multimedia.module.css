@@ -1,18 +1,18 @@
-.images{
+.images {
     height: 50vh;
 }
 
-.carousel{
+.carousel {
     width: 99vw;
 }
 
 @media (max-width: 768px) {
-    .images{
+    .images {
         height: auto;
         width: 70vw;
     }
 
-    .carousel{
+    .carousel {
         width: 100vw;
     }
-}
+} 

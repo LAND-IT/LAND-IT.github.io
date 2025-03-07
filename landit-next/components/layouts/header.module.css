@@ -2,7 +2,7 @@
     right: 0
 }
 
-.selectedLanguage, .optionSelected{
+.selectedLanguage, .optionSelected {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -10,23 +10,23 @@
     gap: 5px
 }
 
-.dropdownLanguages{
+.dropdownLanguages {
     position: fixed;
     right: 15px;
     top: 10px;
     background-color: rgba(255, 255, 255, 0.63);
 }
 
-.dropdownLanguages .p-dropdown-trigger{
+.dropdownLanguages :global(.p-dropdown-trigger) {
     width: 15px;
     padding: 2px;
 }
 
-.dropdownLanguages .p-inputtext{
+.dropdownLanguages :global(.p-inputtext) {
     padding: 8px;
 }
 
-.header-image{
+.headerImage {
     height: 500px;
     width: 100%;
     background-image: url(/images/forest2.jpg);
@@ -42,22 +42,17 @@
     filter: saturate(1.3);
 }
 
-.contact :hover{
+.contact :hover {
     cursor: pointer;
 }
 
-
-
-@media only screen and (max-width: 768px){
-    .header-image{
+@media only screen and (max-width: 768px) {
+    .headerImage {
         font-size: 60px;
+        height: 300px;
     }
-    .dropdownLanguages{
+    
+    .dropdownLanguages {
         top: 22px;
     }
-
-    .header-image{
-        height: 300px;
-
-    }
-}
+} 

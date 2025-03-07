@@ -1,5 +1,4 @@
-
-import './footer.css'
+import styles from './footer.module.css'
 import { Icon } from "@iconify/react";
 import { getTranslation } from '@/lib/i18n/getTranslation';
 import { Locale } from '@/i18n';
@@ -12,14 +11,14 @@ export const Footer = async ({locale}: FooterProps) => {
     const t = await getTranslation(locale);
     
     return (
-        <div className={"footer"}>
-            <div className={"footer-sec"}>
+        <div className={styles.footer}>
+            <div className={styles.footerSec}>
                 <h4>{t('footer.contacts')}</h4>
                 <a href="mailto:land.it.web.app@gmail.com" target="_blank">
-                    <Icon className={"contact"} icon={"iconamoon:email"} height={"30px"}/>
+                    <Icon className={styles.contact} icon={"iconamoon:email"} height={"30px"}/>
                 </a>
             </div>
-            <div style={{gap: "10px"}} className={"footer-sec"}>
+            <div style={{gap: "10px"}} className={styles.footerSec}>
                 <h4>{t('footer.links')}</h4>
                 <a target="_blank" 
                    href={"https://landit.di.fct.unl.pt"}>
@@ -38,15 +37,15 @@ export const Footer = async ({locale}: FooterProps) => {
                     {t('footer.consultation')}</a>
 
             </div>
-            <div className={"footer-sec"}>
+            <div className={styles.footerSec}>
                 <h4>{t('footer.entities')}</h4>
-                <div className={"logos-row"}>
-                    <img className={"logo"} src={"/images/aflomacao.png"} alt="Aflomação logo"/>
-                    <img className={"logo"} src={"/images/azr.png"} alt="AZR logo"/>
+                <div className={styles.logosRow}>
+                    <img className={styles.logo} src={"/images/aflomacao.png"} alt="Aflomação logo"/>
+                    <img className={styles.logo} src={"/images/azr.png"} alt="AZR logo"/>
                 </div>
-                <div className={"logos-row"}>
-                    <img className={"logo"} src={"/images/fct.png"} alt="FCT logo"/>
-                    <img className={"logo"} src={"/images/macao.png"} alt="Mação logo"/>
+                <div className={styles.logosRow}>
+                    <img className={styles.logo} src={"/images/fct.png"} alt="FCT logo"/>
+                    <img className={styles.logo} src={"/images/macao.png"} alt="Mação logo"/>
                 </div>
             </div>
         </div>

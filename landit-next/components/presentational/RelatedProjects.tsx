@@ -4,7 +4,7 @@ import {Timeline} from "primereact/timeline";
 import {Icon} from "@iconify/react";
 import './projects.css';
 import {TimelineEvent} from "../../Definitions";
-import useProjects from "../containers/useProjects";
+import useProjects from "../../hooks/useProjects";
 import {useTranslation} from "react-i18next";
 import { useState, useEffect } from 'react';
 

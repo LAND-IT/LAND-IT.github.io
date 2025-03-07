@@ -27,5 +27,5 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring /_next/ and /api/
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images|multimedia|related_projects|team).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images|multimedia|related_projects|team|robots.txt|sitemap.xml).*)'],
 };

@@ -1,5 +1,5 @@
 "use client"
-import "./header.css"
+import styles from "./header.module.css"
 import {Dropdown} from "primereact/dropdown";
 import {useState, useEffect} from "react";
 import {Icon} from "@iconify/react";
@@ -43,27 +43,36 @@ export const Header = ({ lang }: { lang: Locale }) => {
         };
     }, []);
 
-    const selectedCountryTemplate = (option: Language) => {
+    const selectedCountryTemplate = (option: Language | null) => {
+        if (!option) return null;
+        
         return (
-            <div className="selectedLanguage">
+            <div className={styles.selectedLanguage}>
                 <Icon icon={option.icon}/>
                 {windowWidth > 768 ? <div>{option.label}</div> : ""}
             </div>
         );
     };
 
-    const countryOptionTemplate = (option: Language) => {
+    const countryOptionTemplate = (option: Language | null) => {
+        if (!option) return null;
+        
         return (
-            <div className="optionSelected">
+            <div className={styles.optionSelected}>
                 <Icon icon={option.icon}/>
                 <div>{option.label}</div>
             </div>
         );
     };
 
-    const handleLanguageChange = (e: Language) => {
-        const newLang = e.code;
-        setSelectedLanguage(e);
+    const handleLanguageChange = (e: any) => {
+    
+        if (!e || !e.value || !e.value.code) return;
+        
+        const newLang = e.value.code;
+
+
+        setSelectedLanguage(e.value);
         
         // Change the URL to reflect the new language
         router.push(`/${newLang}`);
@@ -71,13 +80,13 @@ export const Header = ({ lang }: { lang: Locale }) => {
 
     return (<>
             <Fade duration={500}>
-                <h1 className={"header-image"}>LAND IT</h1>
+                <h1 className={styles.headerImage}>LAND IT</h1>
             </Fade>
-            <div className={"languages"}>
+            <div className={styles.languages}>
                 <Dropdown value={selectedLanguage}
                           options={items}
                           optionLabel={"label"}
-                          className={"dropdownLanguages"}
+                          className={styles.dropdownLanguages}
                           valueTemplate={selectedCountryTemplate} 
                           itemTemplate={countryOptionTemplate}
                           onChange={handleLanguageChange}/>

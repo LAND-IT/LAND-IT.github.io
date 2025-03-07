@@ -1,4 +1,4 @@
-import {Status} from "../../Definitions";
+import {Status} from "../Definitions";
 import {useTranslation} from "react-i18next";
 
 export default function useProjects() {

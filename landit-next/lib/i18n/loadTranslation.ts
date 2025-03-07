@@ -1,13 +1,17 @@
 import { i18nConfig, Locale } from '@/i18n';
 
-// Import translation files manually from @/translations path as modules
+/**
+ * Translation loader functions for each supported locale
+ */
 const translations = {
   en: () => import('@/translations/en.json').then((module) => module.default),
   pt: () => import('@/translations/pt.json').then((module) => module.default),
 };
 
-// Create a type from imported translation file that corresponds to the default locale.
-// All of the translation files should have the same key structure to avoid errors.
+/**
+ * Type definition for translation objects based on the default locale structure
+ * All translation files should follow the same structure to avoid type errors
+ */
 export type TranslationObject = Awaited<
   ReturnType<(typeof translations)[typeof i18nConfig.defaultLocale]>
 >;
@@ -15,8 +19,8 @@ export type TranslationObject = Awaited<
 /**
  * Loads a translation file as a module based on a given locale.
  *
- * @param {Locale} locale -  A locale that specifies which translation is loaded.
- * @returns {TranslationObject} Translation object.
+ * @param {Locale} locale - The locale that specifies which translation to load
+ * @returns {Promise<TranslationObject>} Translation object
  */
 export const loadTranslation = async (
   locale: Locale

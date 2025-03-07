@@ -1,5 +1,5 @@
 "use client"
-import "./body.css"
+import styles from "./page.module.css"
 import '@/lib/i18n/i18n-client'; // Importar a configuração do i18next
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'next/navigation';
@@ -38,7 +38,7 @@ export default function Page() {
       let currentSection = activeSection
 
       // Verifica se o componente irmão saiu da tela
-      const headerElement = document.querySelector(".ghost") as HTMLElement
+      const headerElement = document.querySelector(`.${styles.ghost}`) as HTMLElement
       if (headerElement) {
         const headerBottom = headerElement.getBoundingClientRect().bottom
         setIsMenuFixed(headerBottom <= 0)
@@ -75,23 +75,23 @@ export default function Page() {
 
   
   return (
-    <div className="container">
+    <div className={styles.container}>
       {/* Componente Fantasma */}
-      {showGhost && <div className="ghost"></div>}
+      {showGhost && <div className={styles.ghost}></div>}
 
       {/* Botão do menu no mobile */}
-      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+      <button className={styles.menuToggle} onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? "X" : "☰"}
       </button>
 
       {/* Menu de navegação */}
-      <nav className={`menu ${menuOpen ? "open" : ""} ${isMenuFixed ? "fixed" : ""}`}>
-        <ul>
+      <nav className={`${styles.menu} ${menuOpen ? styles.open : ""} ${isMenuFixed ? styles.fixed : ""}`}>
+        <ul className={styles.menuList}>
           {sections.map((section) => (
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className={activeSection === section.id ? "active" : ""}
+                className={`${styles.menuLink} ${activeSection === section.id ? styles.active : ''}`}
                 onClick={() => setMenuOpen(false)} // Fecha o menu ao clicar
               >
                 {section.label}
@@ -104,7 +104,7 @@ export default function Page() {
       {/* Conteúdo principal */}
       <div className="content">
         {sections.map((section) => (
-          <section key={section.id} id={section.id} className="section">
+          <section key={section.id} id={section.id} className={styles.section}>
             <Fade duration={2500}>
               <h2>{section.label.toUpperCase()}</h2>
               {section.body}
