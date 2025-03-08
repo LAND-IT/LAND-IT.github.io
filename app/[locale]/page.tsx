@@ -6,7 +6,6 @@ import { Presentation } from '@/components/layouts/Presentation';
 import Multimedia from '@/components/presentational/Multimedia';
 import RelatedProjects from '@/components/presentational/RelatedProjects';
 import {Team } from '@/components/presentational/Team';
-
 import { useTranslations } from 'next-intl';
 
 export default function Page() {

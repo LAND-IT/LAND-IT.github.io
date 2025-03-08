@@ -1,12 +1,14 @@
 {
-  "name": "next-landit",
-  "version": "0.1.0",
+  "name": "info-page",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",

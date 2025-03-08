@@ -1,10 +1,10 @@
-.icons{
-    height: 40px
+.icons {
+    height: 40px;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 80% !important;
-}
+} 

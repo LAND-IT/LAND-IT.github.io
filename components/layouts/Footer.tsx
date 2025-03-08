@@ -1,8 +1,9 @@
+"use client"
 import styles from './footer.module.css'
 import { Icon } from "@iconify/react";
-import { getTranslations } from 'next-intl/server';
-export const Footer = async () => {
-    const t = await getTranslations();
+import { useTranslations } from 'next-intl';
+export const Footer = () => {
+    const t = useTranslations();
     return (
         <div className={styles.footer}>
             <div className={styles.footerSec}>

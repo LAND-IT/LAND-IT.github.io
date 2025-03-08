@@ -15,7 +15,6 @@ interface Language {
 export const Header = ({ lang }: { lang: string }) => {
     const router = useRouter();
     
-
     const items: Language[] = [
         {label: "Português", code: 'pt', icon: "emojione-v1:flag-for-portugal"},
         {label: "English", code: 'en', icon: "emojione-v1:flag-for-united-kingdom"},
@@ -26,7 +25,6 @@ export const Header = ({ lang }: { lang: string }) => {
     );
     const [windowWidth, setWindowWidth] = useState(0);
     
-
     
     useEffect(() => {
         const handleResize = () => {

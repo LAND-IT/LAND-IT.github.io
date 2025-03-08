@@ -2,7 +2,7 @@ import {Card} from "primereact/card";
 import {Button} from "primereact/button";
 import {Timeline} from "primereact/timeline";
 import {Icon} from "@iconify/react";
-import './projects.css';
+import styles from './projects.module.css';
 import {TimelineEvent} from "../../Definitions";
 import useProjects from "../../hooks/useProjects";
 import {useTranslations} from "next-intl";
@@ -47,7 +47,7 @@ export default function RelatedProjects() {
             {!isMobile &&
                 <Timeline value={events} align="alternate" className="customized-timeline" marker={customizedMarker}
                           content={customizedContent}/>}
-            {isMobile && <div className={"cards"}>
+            {isMobile && <div className={styles.cards}>
                 {events.map((event, index) => (
                     <div key={event.title || index}>
                         {customizedContent(event)}
