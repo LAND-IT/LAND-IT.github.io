@@ -13,9 +13,9 @@ import IntlProvider from "@/components/providers/IntlProvider";
 
 // Metadata para SEO
 export const metadata: Metadata = {
-  title: "LAND IT - Landing Page",
+  title: "LAND IT - Land ANalisys and Design of the Integrated areas of the Territory",
   description:
-    "Land ANalisys and Design of the Integrated areas of the Territory | Landing Page",
+    "Is a spatial decision support system, designed to assist AIGP managing entities in planning and executing territorial reorganisation.",
   keywords: [
     "LAND IT",
     "Land Analysis and Design of the Integrated areas of the Territory",
@@ -41,22 +41,12 @@ export const metadata: Metadata = {
     "geographic data",
   ],
   authors: [{ name: "LAND IT Team", url: "https://land-it.github.io" }],
-  openGraph: {
-    title: "LAND IT - Landing Page",
-    description:
-      "Land ANalisys and Design of the Integrated areas of the Territory | Landing Page",
-    url: "https://land-it.github.io",
-    siteName: "LAND IT",
-    images: [
-      {
-        url: "https://land-it.github.io/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "LAND IT - Land ANalisys and Design of the Integrated areas of the Territory",
-      },
-    ],
-    type: "website",
-    locale: "pt_PT",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://land-it.github.io/en",
   },
 };
 
