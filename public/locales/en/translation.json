@@ -18,8 +18,13 @@
         "description": "This thesis focuses on post-territorial reorganisation, aiming to develop economic models to calculate the profits and costs associated with land use in the years following transformation. The study covered the following land uses: maritime pine, eucalyptus, cork oak, and olive groves. Additionally, a feasibility analysis was conducted on the installation of solar panels in the municipality of Mação."
       },
       {
+        "title": "AGILE Article: LAND IT: A Decision Support System for Optimising Land Use Planning Strategies",
+        "date": "June 2025",
+        "description": "Portugal has faced severe wildfires, leading to the creation of the AIGP programme aimed at making the landscape more resilient. To optimise this process, LAND IT was developed — a decision support system that facilitates the creation and management of territorial design proposals. It enables scenario comparison and helps prevent input errors. The municipality of Mação was used as a case study and showed very positive results."
+      },
+      {
         "title": "Master’s Thesis: Intelligent Tools for Editing Land Use Proposals",
-        "date": "Ongoing",
+        "date": "June 2025",
         "description": "The objective of this research is to add editing tools to LAND IT, including geometry editing tools, topological verification tools, and intelligent tools to assist users in the creation of AIGP proposals, such as a filtering system."
       },
       {

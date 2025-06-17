@@ -24,24 +24,26 @@ export default function useProjects() {
             color: 'var(--primary-color)',
             title: t(`projects.list.${1}.title`),
             author: "Lucas Almeida, Maria Catarina Pereira, Mariana Godinho, Margarida Pinto, Nuno Baptista",
+            link: "https://run.unl.pt/handle/10362/181590",
             description: t(`projects.list.${1}.description`)
         },
         {
-            status: Status.ONGOING,
+            status: Status.CONCLUDED,
             date: t(`projects.list.${2}.date`),
-            icon: 'pepicons-pop:arrows-spin-circle-filled',
-            color: '#607D8B',
+            icon: 'pepicons-pop:checkmark-circle-filled',
+            color: 'var(--primary-color)',
             title: t(`projects.list.${2}.title`),
-            author: "Francisco Freire",
-            description: t(`projects.list.${2}.description`)
+            author: "Márcia B. Matias, Cristina D. Henriques, Carlos Viegas Damásio, Fernando Birra, João Moura Pires",
+            description: t(`projects.list.${2}.description`),
+            link: 'https://agile-giss.copernicus.org/articles/6/39/2025/'
         },
         {
-            status: Status.ONGOING,
+            status: Status.CONCLUDED,
             date: t(`projects.list.${3}.date`),
-            icon: 'pepicons-pop:arrows-spin-circle-filled',
-            color: '#607D8B',
+            icon: 'pepicons-pop:checkmark-circle-filled',
+            color: 'var(--primary-color)',
             title: t(`projects.list.${3}.title`),
-            author: "Pedro Grilo",
+            author: "Francisco Freire",
             description: t(`projects.list.${3}.description`)
         },
         {
@@ -50,7 +52,7 @@ export default function useProjects() {
             icon: 'pepicons-pop:arrows-spin-circle-filled',
             color: '#607D8B',
             title: t(`projects.list.${4}.title`),
-            author: "Carolina Salazar",
+            author: "Pedro Grilo",
             description: t(`projects.list.${4}.description`)
         },
         {
@@ -59,8 +61,17 @@ export default function useProjects() {
             icon: 'pepicons-pop:arrows-spin-circle-filled',
             color: '#607D8B',
             title: t(`projects.list.${5}.title`),
-            author: "Diogo Moreira",
+            author: "Carolina Salazar",
             description: t(`projects.list.${5}.description`)
+        },
+        {
+            status: Status.ONGOING,
+            date: t(`projects.list.${6}.date`),
+            icon: 'pepicons-pop:arrows-spin-circle-filled',
+            color: '#607D8B',
+            title: t(`projects.list.${6}.title`),
+            author: "Diogo Moreira",
+            description: t(`projects.list.${6}.description`)
         }
     ];
 }

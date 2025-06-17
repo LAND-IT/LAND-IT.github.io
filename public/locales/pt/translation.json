@@ -18,8 +18,13 @@
         "description": "Esta tese foca-se no pós reordenamento do território onde o seu objetivo é o desenvolvimento de modelos económicos para calcular os lucros e gastos que as ocupações do solo terão nos anos seguintes à transformação. Nesta tese foram abordados os seguintes usos do solo: pinheiro-bravo, eucalipto, sobreiro e olivais. Além disso foi realizada uma análise de viabilidade de instalação de painéis solares no concelho de Mação."
       },
       {
+        "title": "Artigo na AGILE: LAND IT: Um Sistema de Apoio à Decisão para Otimizar Estratégias de Planeamento do Território",
+        "date": "Junho 2025",
+        "description": "Portugal tem enfrentado grandes incêndios florestais, o que levou à criação das AIGP, que visam tornar a paisagem mais resiliente. Para otimizar este processo foi criado o LAND IT, um sistema de apoio à decisão que facilita a criação e gestão de propostas de desenho territoriais. Permite não só a comparação de cenários como evita o aparecimento de erros de input. O municipio de Mação foi um caso de estudo deste projeto e demonstrou resultados muito positivos."
+      },
+      {
         "title": "Tese de Mestrado: Ferramentas Inteligentes para Edição de Propostas de Uso do Território",
-        "date": "Em curso",
+        "date": "Junho 2025",
         "description": "O objetivo deste tema é acrescentar ferramentas de edição ao LAND IT, nomeadamente ferramentas para edição de geometrias, ferramentas de verificação topológica e ferramentas inteligentes que auxiliem o utilizador no processo de criação das OIGP, como, por exemplo, um sistemas de filtros."
       },
       {
