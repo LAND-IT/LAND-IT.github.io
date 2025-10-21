@@ -15,15 +15,15 @@ export const Footer = () => {
             <div style={{gap: "10px"}} className={styles.footerSec}>
                 <h4>{t('footer.links')}</h4>
                 <a target="_blank" 
-                   href={"https://landit.di.fct.unl.pt"}>
+                   href={"https://landit.pt"}>
                     {t('footer.LAND-IT')}</a>
 
                 <a target="_blank" 
-                   href={"https://unlpt-my.sharepoint.com/:u:/g/personal/jmp_fct_unl_pt/EfkJ9O0u7zRPvt7qNX0pTVgBCDuobVnMHszYTmiBebe14Q?e=wWrw6U"}>
+                   href={"https://drive.google.com/file/d/1VwBF_oKHChhNPTup_Fa1dikuQQEUek_x/view?usp=sharing"}>
                     {t('footer.podcast')}</a>
 
                 <a target="_blank" 
-                   href={"https://unlpt-my.sharepoint.com/:f:/g/personal/jmp_fct_unl_pt/Es3k_9jC_3dKsAOtJTs8ISgB0BzOVPmMNncgLXNrhS_CNg?e=N5O614"}>
+                   href={"https://drive.google.com/drive/folders/1A9KU2nZ6xXibhZnzlcDErIp21YEacsZF?usp=sharing"}>
                     {t('footer.oigp')}</a>
 
                 <a target="_blank"
