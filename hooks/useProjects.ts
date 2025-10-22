@@ -44,7 +44,8 @@ export default function useProjects() {
             color: 'var(--primary-color)',
             title: t(`projects.list.${3}.title`),
             author: "Francisco Freire",
-            description: t(`projects.list.${3}.description`)
+            description: t(`projects.list.${3}.description`),
+            link: 'https://drive.google.com/open?id=1hn60KutOxTpWiLOk1xnhBUHa0BQUTXBC&usp=drive_fs'
         },
         {
             status: Status.ONGOING,
