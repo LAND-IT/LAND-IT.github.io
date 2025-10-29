@@ -1,18 +1,21 @@
 .avatars-container {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
 }
 
 .avatars-row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
+    align-items: flex-start;
+    align-content: space-around;
 }
 
+.avatar-item {
+    flex: 0 1 250px;
+    text-align: center;
+}
 
 .avatars-grid {
     display: grid;

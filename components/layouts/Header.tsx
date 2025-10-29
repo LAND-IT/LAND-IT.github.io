@@ -3,7 +3,7 @@ import styles from "./header.module.css"
 import {Dropdown} from "primereact/dropdown";
 import {useState, useEffect} from "react";
 import {Icon} from "@iconify/react";
-import {Fade} from "react-awesome-reveal";
+import {Fade, Zoom} from "react-awesome-reveal";
 import { useRouter } from 'next/navigation';
 
 interface Language {
@@ -77,7 +77,11 @@ export const Header = ({ lang }: { lang: string }) => {
 
     return (<>
             <Fade duration={500}>
-                <h1 className={styles.headerImage}>LAND IT</h1>
+                <div className={styles.headerImage}>
+                    <Zoom className={styles.headerZoomLogo} duration={2500}>
+                        <img className={styles.headerLogo} src={"/images/logo_branco.png"} alt={"landit-logo"} />
+                    </Zoom>
+                </div>
             </Fade>
             <div className={styles.languages}>
                 <Dropdown value={selectedLanguage}

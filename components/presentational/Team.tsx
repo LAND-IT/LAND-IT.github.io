@@ -12,24 +12,10 @@ const people: Person[] = [
 ];
 
 export const Team = () => {
-    const mid = Math.ceil(people.length / 2);
-    const firstRow = people.slice(0, mid);
-    const secondRow = people.slice(mid);
-
-
     return (
         <div className="avatars-container">
             <div className="avatars-row">
-                {firstRow.map((p, i) => (
-                    <div key={i} className="avatar-item">
-                        <div className="avatar-circle"><User size={38} /></div>
-                        <div className="avatar-name">{p.name}</div>
-                        <div className="avatar-job">{p.job}</div>
-                    </div>
-                ))}
-            </div>
-            <div className="avatars-row">
-                {secondRow.map((p, i) => (
+                {people.map((p, i) => (
                     <div key={i} className="avatar-item">
                         <div className="avatar-circle"><User size={38} /></div>
                         <div className="avatar-name">{p.name}</div>
