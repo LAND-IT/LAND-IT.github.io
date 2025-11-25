@@ -1,0 +1,19 @@
+.images {
+    height: 50vh;
+}
+
+.carousel {
+    text-align: center;
+    width: 99vw;
+}
+
+@media (max-width: 768px) {
+    .images {
+        height: auto;
+        width: 70vw;
+    }
+
+    .carousel {
+        width: 100vw;
+    }
+} 

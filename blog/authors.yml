@@ -1,0 +1,17 @@
+marcia-matias:
+  name: Márcia B. Matias
+  title: LAND IT - Tech Lead
+  url: https://github.com/MarciaBM
+  image_url: https://github.com/MarciaBM.png
+  page: true
+  socials:
+    github: MarciaBM
+
+diogo-moreira:
+  name: Diogo Moreira
+  title: LAND IT - Team Member
+  url: https://github.com/DiogoFSM
+  image_url: https://github.com/DiogoFSM.png
+  page: true
+  socials:
+    github: DiogoFSM
