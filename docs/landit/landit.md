@@ -1,8 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Página em Construção
+# Como Utilizar o LAND IT
 
 Esta página encontra-se em construção.
-

@@ -1,8 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Work in Progress
+# How to Use LAND IT
 
 This page is under construction.
-
