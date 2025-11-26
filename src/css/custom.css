@@ -99,3 +99,19 @@ html[data-theme='dark'] .logo-dark {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 */
+
+html[data-mode='iframe'] .navbar__brand {
+  display: none;
+}
+
+:not(html[data-mode='iframe']) .navbar__item[sidebarId="homeSidebar"] {
+  display: none;
+}
+
+html[data-mode='iframe'] .navbar__item[sidebarId="homeSidebar"] {
+  display: block;
+}
+
+
+
+
