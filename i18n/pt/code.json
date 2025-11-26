@@ -430,5 +430,23 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "team.member1.role": {
+    "message": "Responsável Executivo do Projeto"
+  },
+  "team.member2.role": {
+    "message": "Conselheiro Estratégico & Visionário do Projeto"
+  },
+  "team.member3.role": {
+    "message": "Líder Técnica"
+  },
+  "team.member4.role": {
+    "message": "Desenvolvedor Full-Stack"
+  },
+  "team.member5.role": {
+    "message": "Desenvolvedora Full-Stack"
+  },
+  "team.member6.role": {
+    "message": "Conselheira Técnica"
   }
 }
