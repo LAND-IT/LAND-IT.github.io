@@ -1,0 +1,42 @@
+{
+  "link.title.Links Úteis": {
+    "message": "Useful Links",
+    "description": "The title of the footer links column with title=Links Úteis in the footer"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/LAND-IT"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 LAND IT. Logo design by <a style='color:white; text-decoration:underline;' href='https://www.linkedin.com/in/mariaines-gomes' target='_blank'> Maria Inês Gomes</a>. Built with Docusaurus.",
+    "description": "The footer copyright"
+  },
+  "link.title.Contactos": {
+    "message": "Contacts",
+    "description": "The title of the footer links column with title=Contactos in the footer"
+  },
+  "link.title.Entidades Colaboradoras": {
+    "message": "Collaborating Entities",
+    "description": "The title of the footer links column with title=Entidades Colaboradoras in the footer"
+  },
+  "link.item.label.Email": {
+    "message": "Email",
+    "description": "The label of footer link with label=Email linking to mailto:land.it.web.app@gmail.com"
+  },
+  "link.item.label.Plataforma LAND IT": {
+    "message": "LAND IT Platform",
+    "description": "The label of footer link with label=Plataforma LAND IT linking to https://landit.pt"
+  },
+  "link.item.label.Podcast gerado por IA sobre o LAND IT": {
+    "message": "AI-generated Podcast about LAND IT",
+    "description": "The label of footer link with label=Podcast gerado por IA sobre o LAND IT linking to https://drive.google.com/file/d/1VwBF_oKHChhNPTup_Fa1dikuQQEUek_x/view?usp=sharing"
+  },
+  "link.item.label.Como construir uma OIGP?": {
+    "message": "How to build an OIGP?",
+    "description": "The label of footer link with label=Como construir uma OIGP? linking to https://drive.google.com/drive/folders/1A9KU2nZ6xXibhZnzlcDErIp21YEacsZF?usp=sharing"
+  },
+  "link.item.label.OIGP em consulta pública": {
+    "message": "OIGP under public consultation",
+    "description": "The label of footer link with label=OIGP em consulta pública linking to https://www.dgterritorio.gov.pt/paisagem/ptp/oigp/consulta-publica-OIGP"
+  }
+}

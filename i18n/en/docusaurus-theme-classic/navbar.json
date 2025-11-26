@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "LAND IT",
+    "description": "The title in the navbar"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "logo.alt": {
+    "message": "LAND IT Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentação": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentação"
+  }
+}
