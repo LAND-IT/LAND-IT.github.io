@@ -1,13 +1,15 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LAND IT - Land ANalysis and Design of the Integrated areas of the Territory',
-  tagline: 'Is a spatial decision support system, designed to assist AIGP managing entities in planning and executing territorial reorganisation.',
-  favicon: 'favicons/favicon.ico',
+  title:
+    "LAND IT - Land ANalysis and Design of the Integrated areas of the Territory",
+  tagline:
+    "Is a spatial decision support system, designed to assist AIGP managing entities in planning and executing territorial reorganisation.",
+  favicon: "favicons/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,39 +17,39 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://land-it.github.io',
+  url: "https://land-it.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
   trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'LAND-IT',
-  projectName: 'LAND-IT.github.io',
+  organizationName: "LAND-IT",
+  projectName: "LAND-IT.github.io",
 
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: "gh-pages",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'pt',
-    locales: ['pt', 'en'],
+    defaultLocale: "pt",
+    locales: ["pt", "en"],
     localeConfigs: {
-      pt: { label: 'Português' },
-      en: { label: 'English' },
+      pt: { label: "Português" },
+      en: { label: "English" },
     },
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -56,7 +58,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
@@ -64,12 +66,12 @@ const config: Config = {
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -77,76 +79,81 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'images/social-card.jpg',
+    image: "images/social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
-      defaultMode: 'light',
+      defaultMode: "light",
     },
     navbar: {
-      title: 'LAND IT',
+      title: "LAND IT",
       logo: {
-        alt: 'LAND IT Logo',
-        src: 'images/logo_navbar.png',
-        srcDark: 'images/logo_navbar_branco.png',
+        alt: "LAND IT Logo",
+        src: "images/logo_navbar.png",
+        srcDark: "images/logo_navbar_branco.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentação',
+          to: "/",
+          label: "Home",
+          position: "left",
+          sidebarId: "homeSidebar",
         },
         {
-          to: '/blog', 
-          label: 'Blog', 
-          position: 'left'
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Documentação",
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          to: "/blog",
+          label: "Blog",
+          position: "left",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Contactos',
+          title: "Contactos",
           items: [
             {
-              label: 'Email',
-              href: 'mailto:land.it.web.app@gmail.com'
+              label: "Email",
+              href: "mailto:land.it.web.app@gmail.com",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/LAND-IT',
+              label: "GitHub",
+              href: "https://github.com/LAND-IT",
             },
-          ]
-        },
-        {
-          title: 'Links Úteis',
-          items: [
-            {
-              label: 'Plataforma LAND IT',
-              href: 'https://landit.pt',
-            },
-            {
-              label: 'Podcast gerado por IA sobre o LAND IT',
-              href: 'https://drive.google.com/file/d/1VwBF_oKHChhNPTup_Fa1dikuQQEUek_x/view?usp=sharing',
-            },
-            {
-              label: 'Como construir uma OIGP?',
-              href: 'https://drive.google.com/drive/folders/1A9KU2nZ6xXibhZnzlcDErIp21YEacsZF?usp=sharing',
-            },
-            {
-              label: 'OIGP em consulta pública',
-              href: 'https://www.dgterritorio.gov.pt/paisagem/ptp/oigp/consulta-publica-OIGP',
-            },
-            
           ],
         },
         {
-          title: 'Entidades Colaboradoras',
+          title: "Links Úteis",
+          items: [
+            {
+              label: "Plataforma LAND IT",
+              href: "https://landit.pt",
+            },
+            {
+              label: "Podcast gerado por IA sobre o LAND IT",
+              href: "https://drive.google.com/file/d/1VwBF_oKHChhNPTup_Fa1dikuQQEUek_x/view?usp=sharing",
+            },
+            {
+              label: "Como construir uma OIGP?",
+              href: "https://drive.google.com/drive/folders/1A9KU2nZ6xXibhZnzlcDErIp21YEacsZF?usp=sharing",
+            },
+            {
+              label: "OIGP em consulta pública",
+              href: "https://www.dgterritorio.gov.pt/paisagem/ptp/oigp/consulta-publica-OIGP",
+            },
+          ],
+        },
+        {
+          title: "Entidades Colaboradoras",
           items: [
             {
               html: `
@@ -181,12 +188,13 @@ const config: Config = {
     },
 
     metadata: [
-      { 
-        name: 'description', 
-        content: 'Is a spatial decision support system, designed to assist AIGP managing entities in planning and executing territorial reorganisation.' 
+      {
+        name: "description",
+        content:
+          "Is a spatial decision support system, designed to assist AIGP managing entities in planning and executing territorial reorganisation.",
       },
-      { 
-        name: 'keywords', 
+      {
+        name: "keywords",
         content: `LAND IT, 
           Land Analysis and Design of the Integrated areas of the Territory, 
           gestão da paisagem, 
@@ -209,11 +217,11 @@ const config: Config = {
           digital cartography, 
           dados geográficos, 
           geographic data
-          ` 
+          `,
       },
-      { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'LAND IT Team' },
-    ]
+      { name: "robots", content: "index, follow" },
+      { name: "author", content: "LAND IT Team" },
+    ],
   } satisfies Preset.ThemeConfig,
 };
 

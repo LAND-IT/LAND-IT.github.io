@@ -14,5 +14,9 @@
   "item.label.Documentação": {
     "message": "Documentation",
     "description": "Navbar item with label Documentação"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
   }
 }
