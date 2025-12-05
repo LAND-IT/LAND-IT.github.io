@@ -7,14 +7,18 @@ type Person = { name: string, job: string, profilePicture?: string, extraStyle?:
 const people: Person[] = [
     { name: "Eng. António Louro", job: translate({id:"team.member1.role"}),
         profilePicture: "/images/profile_pictures/member1.jpg",
-        extraStyle: "object-position: 30% 30%; transform: scale(1.1);"
+        extraStyle: "object-position: 30% 30%; transform: scale(1.2);"
     },
     { name: "Prof. João Moura Pires", job: translate({id:"team.member2.role"}) },
-    { name: "Márcia Matias", job: translate({id:"team.member3.role"}),profilePicture: "/images/profile_pictures/member3.jpg" },
-    { name: "Francisco Freire", job: translate({id:"team.member4.role"}) },
+    { name: "Márcia Matias", job: translate({id:"team.member3.role"}),
+        profilePicture: "/images/profile_pictures/member3.jpg",
+        extraStyle: "object-position: 0% 60%;"},
+    { name: "Francisco Freire", job: translate({id:"team.member4.role"}),
+        profilePicture: "/images/profile_pictures/member4.jpg",
+        extraStyle: "object-position: 0% 0%;"},
     { name: "Francisca Silva", job: translate({id:"team.member5.role"}),
         profilePicture: "/images/profile_pictures/member5.jpeg",
-        extraStyle: "transform: scale(1.5); object-position: center 55%; " },
+        extraStyle: "transform: scale(1.8); object-position: 0% 40%; " },
     { name: "Prof. Cristina Henriques", job: translate({id:"team.member6.role"}) },
 ];
 
