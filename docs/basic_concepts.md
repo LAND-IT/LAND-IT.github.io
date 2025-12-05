@@ -4,4 +4,22 @@ sidebar_position: 2
 
 # Conceitos Básicos
 
-Esta página encontra-se em construção.
+Este documento apresenta os quatro conceitos essenciais para compreender o funcionamento do **LAND IT**: **POSA**, **POSP**, **Cenário** e **Versão**. Estes elementos estruturam todo o processo de análise, planeamento e tomada de decisão dentro do sistema.
+
+## POSA - Planta de Ocupação do Solo Atual
+
+O primeiro conceito é a **POSA — Planta de Ocupação do Solo Atual**. A POSA representa exatamente o estado atual do território, ou seja, como o solo está ocupado hoje. É a nossa base de referência e permite perceber o que existe no terreno antes de pensarmos em qualquer transformação.
+
+## POSP - Planta de Ocupação do Solo Proposta
+
+O segundo conceito é a **POSP — Planta de Ocupação do Solo Proposta**. A POSP descreve a visão futura para o território, ou seja, aquilo que se pretende que o solo venha a ser, de acordo com os objetivos das AIGP. Enquanto a POSA mostra o “agora”, a POSP mostra o “para onde queremos ir”.
+
+## Cenário
+
+O terceiro conceito é o de **cenário**. Um cenário combina duas coisas: por um lado, a POSP, que representa a proposta de uso do solo; e por outro, os custos associados às transformações necessárias para chegar a essa proposta. Assim, um cenário não é apenas um desenho: é uma proposta completa e economicamente avaliada.
+
+## Versões
+
+Finalmente, cada cenário pode ter várias **versões**. Uma versão funciona como um ‘estado guardado’ do cenário. Isto permite testar alternativas, fazer ajustes, comparar propostas e evoluir o planeamento ao longo do tempo. Tal como num sistema de controlo de versões, conseguimos acompanhar a progressão das ideias e recuperar versões anteriores sempre que necessário.
+
+
