@@ -6,4 +6,4 @@ slug: /scenario-stats-costs
 
 # Custos das Propostas de Uso
 
-{<video style={{width:"100%"}} src={require('/videos/Tutorial 9 - Estatísticas 2.mp4').default} controls/>}
+{<video style={{width:"100%"}} src={require('/videos/Tutorial 9 - Estatisticas 2.mp4').default} controls/>}
