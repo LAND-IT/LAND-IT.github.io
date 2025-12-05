@@ -16,3 +16,6 @@ sidebar_position: 2
 
 ## Visualização de Atributos
 {<video style={{width:"100%"}} src={require('/videos/Tutorial 11 - Visualização de Atributos.mp4').default} controls/>}
+
+### Filtros nas Tabelas de Atributos
+{<video style={{width:"100%"}} src={require('/videos/Tutorial 12 - Filtros Tabela de Atributos.mp4').default} controls/>}
