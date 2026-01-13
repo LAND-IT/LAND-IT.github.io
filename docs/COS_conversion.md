@@ -4,12 +4,6 @@ sidebar_position: 5
 
 # Conversão da COS
 
-<a
-  href="https://raw.githubusercontent.com/LAND-IT/LAND-IT.github.io/main/docs/ConversaoCOS.xlsx"
-  className="button button--primary">
-  Download do Excel
-</a>
-
 A correspondência entre as classes da tabela COS18 e da tabela COS23 não é sempre bidirecional. Ou seja, a correspondência COS18 → COS23 não é necessariamente igual à correspondência COS23 → COS18. Exemplo:
 
 Na COS18 existe:
