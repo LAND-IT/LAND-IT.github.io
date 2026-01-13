@@ -6,8 +6,7 @@ sidebar_position: 5
 
 <a
   href="https://raw.githubusercontent.com/LAND-IT/LAND-IT.github.io/main/docs/ConversaoCOS.xlsx"
-  className="button"
-  style={{ backgroundColor: "#005800", color: "white" }}>
+  className="button button--primary">
   Download do Excel
 </a>
 
