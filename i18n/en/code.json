@@ -438,15 +438,18 @@
     "message": "Strategic Advisor & Project Visionary"
   },
   "team.member3.role": {
-    "message": "Tech Lead"
+    "message": "Technical Founder & Technical Advisor"
   },
   "team.member4.role": {
-    "message": "Full-Stack Engineer"
+    "message": "Tech Lead"
   },
   "team.member5.role": {
     "message": "Full-Stack Engineer"
   },
   "team.member6.role": {
     "message": "Technical Advisor"
+  },
+  "team.member7.role": {
+    "message": "Full-Stack Engineer"
   }
 }
