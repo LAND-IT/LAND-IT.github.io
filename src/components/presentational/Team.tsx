@@ -35,7 +35,9 @@ const people: Person[] = [
         profilePicture: "/images/profile_pictures/member7.jpg",
         extraStyle: "object-position: 0% 90%;"
     },
-    {name: "Prof. Cristina Henriques", job: translate({id: "team.member6.role"})},
+    {name: "Prof. Cristina Henriques", job: translate({id: "team.member6.role"}),
+        profilePicture: "/images/profile_pictures/member6.jpg",
+        extraStyle: "object-position: 1px 10px; transform: scale(1.6);"},
 ];
 
 export const Team = () => {
