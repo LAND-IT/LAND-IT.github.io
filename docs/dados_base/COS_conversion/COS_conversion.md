@@ -1,5 +1,7 @@
 ---
-sidebar_position: 5
+id: cos_conversion_intro
+sidebar_label: Conversão da COS
+slug: /cos-conversion-introduction
 ---
 
 # Conversão da COS
