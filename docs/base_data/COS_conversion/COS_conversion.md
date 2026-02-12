@@ -7,7 +7,7 @@ slug: /cos-conversion-introduction
 # Conversão da COS
 
 <a
-  href="https://raw.githubusercontent.com/LAND-IT/LAND-IT.github.io/main/docs/ConversionCOS.xlsx"
+  href="https://raw.githubusercontent.com/LAND-IT/LAND-IT.github.io/main/docs/base_data/COS_conversion/ConversionCOS.xlsx"
   style={{
     display: "inline-block",
     padding: "10px 16px",
