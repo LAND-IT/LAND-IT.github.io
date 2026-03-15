@@ -6,4 +6,4 @@ sidebar_position: 4
 
 # Extension Development
 
-Esta página encontra-se em construção.
+LAND IT's capabilities can be expanded via extensions. This section explains how they are developed.

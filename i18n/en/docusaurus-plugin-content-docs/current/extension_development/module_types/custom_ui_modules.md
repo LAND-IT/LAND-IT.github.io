@@ -44,7 +44,7 @@ Example of a custom UI module that appears in the scenario version statistics pa
 ```
 </details>
 
-To communicate with the main application use the `landit-extensions-sdk` package, which contains an "api" object with several methods to retrieve information about the current scenario/version, layers and geometries. More information about it can be found [here](/docs/extension_development/api/extensions-sdk).
+To communicate with the main application use the `landit-extensions-sdk` package (installed from `github:LAND-IT/sdk` as in the template), which contains an "api" object with several methods to retrieve information about the current scenario/version, layers and geometries. More information about it can be found [here](/docs/extension_development/api/extensions-sdk).
 
 If using the provided template for extensions, the "frontend" project is a Vite project (TypeScript + React), where you have:
 - The "src" folder: location of the UI modules' code. Each module should have a custom React component (tsx file) and a `main.tsx` file that defines a `mount` function, as in the following example:

@@ -43,8 +43,8 @@ These modules are a way to easily create a simple form interface, to be displaye
     - **defaultValue**: default value for this parameter
     - **required**: true/false whether this value is mandatory to fill (default: false)
     - **integer**: true/false whether this value is an integer or not (default: false)
-    - **minimum**: minimum amount of characters in the string
-    - **maximum**: maximum amount of characters in the string
+    - **minimum**: minimum value of the number
+    - **maximum**: maximum value of the number
     - **step**: controls the increments of the number input in the frontend
 - **Single Selection**: select one item from a list, rendered as a dropdown in the frontend
     - **type** [required]: "selectSingle"
@@ -68,27 +68,69 @@ These modules are a way to easily create a simple form interface, to be displaye
 
 </details>
 
-<!--
-TODO: Add images of these examples
--->
-
 <details>
 <summary>Config examples</summary>
 
-Simple popup, just with a button, triggering the execution of the `example-function` function module (sending the scenario and version ids as input), and then displaying its output (json):
+Here is an example of a declarative UI module with parameters of each type:
+
 ```
 {
-  "id": "example-declarative-ui",
+  "id": "full-declarative-ui-example",
   "type": "interface-declarative",
   "subtype": "scenario-popup",
-  "displayName": "Exemplo de Popup com Interface Declarativa",
-  "bindsTo": "example-function",
+  "displayName": "Declarative UI Example",
+  "bindsTo": "hello-function",
   "ui": {
-    "submitLabel": "Contar Polígonos da POSP",
+    "submitLabel": "Execute",
     "result": {
       "type": "json"
     },
     "parameters": [
+      {
+        "name": "boolParam",
+        "type": "bool",
+        "label": "Boolean Parameter",
+        "defaultValue": false
+      },
+      {
+        "name": "textParam",
+        "type": "text",
+        "label": "Text Parameter",
+        "defaultValue": "Placeholder Text",
+        "required": true,
+        "maxLength": 20
+      },
+      {
+        "name": "numberParam",
+        "type": "number",
+        "label": "Number Parameter",
+        "defaultValue": 123,
+        "required": true,
+        "integer": true,
+        "maximum": 1000
+      },
+      {
+        "name": "selectSingleParam",
+        "type": "selectSingle",
+        "label": "Select Single Parameter",
+        "defaultValue": "option1",
+        "values": [
+          {"value": "option1", "label": "Option 1"},
+          {"value": "option2", "label": "Option 2"},
+          {"value": "option3", "label": "Option 3"}
+        ]
+      },
+      {
+        "name": "selectMultiParam",
+        "type": "selectMulti",
+        "label": "Select Multi Parameter",
+        "defaultValues": ["option1", "option2"],
+        "values": [
+          {"value": "option1", "label": "Option 1"},
+          {"value": "option2", "label": "Option 2"},
+          {"value": "option3", "label": "Option 3"}
+        ]
+      },
       {
         "name": "scenario",
         "type": "context",
@@ -104,40 +146,11 @@ Simple popup, just with a button, triggering the execution of the `example-funct
 }
 ```
 
-Popup that sends two numbers (integers) as input to the `hello-function` module: 
-```
-{
-  "id": "hello-popup",
-  "type": "interface-declarative",
-  "subtype": "scenario-popup",
-  "displayName": "Hello Popup",
-  "bindsTo": "hello-function",
-  "ui": {
-    "submitLabel": "Sum",
-    "result": {
-      "type": "json"
-    },
-    "parameters": [
-      {
-        "type": "number",
-        "name": "a",
-        "label": "a",
-        "integer": true,
-        "required": true
-      },
-      {
-        "type": "number",
-        "name": "b",
-        "label": "b",
-        "integer": true,
-        "required": true
-      }
-    ]
-  }
-}
-```
+This produces the following form interface (please note that the "Context parameters" section is only displayed to admins, not regular users):
+<img src={require('/static/images/extensions_development/declarative-ui-example.png').default} />
 
-Slightly more complex popup, which includes selection (selectSingle and selectMulti) parameters. In this case, the output is a (zip) file, so the button will trigger the execution of the `geojson-function` module and then the download of its output file.
+
+Another example, coming from the GeoJSON Export extension. In this case, the output is a (zip) file, so the button will trigger the execution of the `geojson-function` module and then the download of its output file.
 ```
 {
   "id": "geojson-export-popup",
@@ -195,5 +208,8 @@ Slightly more complex popup, which includes selection (selectSingle and selectMu
   }
 }
 ```
+
+This produces the following interface:
+<img src={require('/static/images/extensions_development/declarative-ui-example-geojson.png').default} />
 
 </details>

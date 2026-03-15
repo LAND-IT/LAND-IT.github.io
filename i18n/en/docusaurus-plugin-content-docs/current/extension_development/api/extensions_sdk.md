@@ -8,6 +8,8 @@ sidebar_position: 2
 
 This API can be used by the front-end modules of an extension (Custom UI modules) to interact with the LAND IT front-end application and retrieve data such as context data (current scenario and version where the module is being executed/displayed), available layers and geometries.
 
+These methods are async (return Promises), since the `postMessage()` method is used for communication between the extension IFrame and the main application.
+
 ----
 
 #### `getProps()`
