@@ -1,7 +1,7 @@
 ---
 id: api
 sidebar_label: APIs
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # APIs

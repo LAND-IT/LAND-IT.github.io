@@ -1,7 +1,7 @@
 ---
 id: module-types
 sidebar_label: Tipos de Módulos
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Tipos de Módulos
