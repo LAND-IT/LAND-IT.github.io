@@ -19,7 +19,7 @@ These are back-end modules that take an input and execute some code to produce a
 <summary>Config examples</summary>
 
 Example of a function module config. This function module is implemented by the `ModelsFunction` class, receives an input of type `ModelsInput` and produces an output of type `ModelsOutput`:
-```
+```json
 {
       "id": "models-function",
       "type": "function",
@@ -30,7 +30,7 @@ Example of a function module config. This function module is implemented by the 
 ```
 
 Function module that returns a file, with the output being of type `[B` (byte array):
-```
+```json
 {
       "id": "geojson-function",
       "type": "function",

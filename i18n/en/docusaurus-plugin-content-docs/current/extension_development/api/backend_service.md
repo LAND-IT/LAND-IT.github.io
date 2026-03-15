@@ -1,10 +1,10 @@
 ---
 id: backend-service
-sidebar_label: Back-end Service
+sidebar_label: Back-end Service API
 sidebar_position: 1
 ---
 
-# LAND IT Back-end Service
+# LAND IT Back-end Service API
 
 This API can be used in the back-end modules of an extension (Function Modules) to interact with LAND IT data.
 

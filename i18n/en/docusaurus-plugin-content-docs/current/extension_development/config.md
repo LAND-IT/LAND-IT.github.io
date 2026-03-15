@@ -27,7 +27,7 @@ This example comes from the "GeoJSON Export" extension, which is composed of two
 - a function module, that contains the logic to generate the GeoJSON files for several layers of a LAND IT scenario version.
 - a declarative UI module, that creates an interface to allow the user to select parameters, execute the extension module and get the output - in this case, a zip with geojson files.
 
-```
+```json
 {
   "id": "geojson-export",
   "displayName": "GeoJSON Export",

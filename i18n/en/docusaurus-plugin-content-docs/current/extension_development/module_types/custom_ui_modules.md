@@ -22,7 +22,7 @@ Their config takes the following fields:
 <summary>Config examples</summary>
 
 Example of a custom UI module that appears in the scenario editing page (subtype: `scenario-popup`):
-```
+```json
 {
     "id": "example-ui",
     "type": "interface",
@@ -33,7 +33,7 @@ Example of a custom UI module that appears in the scenario editing page (subtype
 ```
 
 Example of a custom UI module that appears in the scenario version statistics page (subtype: `singlestats-panel`):
-```
+```json
 {
     "id": "models-panel",
     "type": "interface",
@@ -52,7 +52,7 @@ If using the provided template for extensions, the "frontend" project is a Vite 
 <summary>Custom UI module example</summary>
 
 examplePopup.tsx
-```
+```typescript
 export function ExamplePopup() {
     ...
     
@@ -63,7 +63,7 @@ export function ExamplePopup() {
 ```
 
 main.tsx
-```
+```typescript
 function mount() {
     const rootEl = document.getElementById("root");
     if (!rootEl) return;
@@ -75,14 +75,15 @@ mount();
 ```
 
 </details>
-- A vite config file for each module, that allows each module to be built independently, as shown in the example below:
+
+- A Vite config file for each module, that allows each module to be built independently, as shown in the example below:
 <details>
 <summary>Vite config file example</summary>
 
 Example for the "ExamplePopup" module:
 
 vite.examplePopup.config.ts
-```
+```typescript
 export default defineConfig({
     plugins: [react()],
     build: {
@@ -104,8 +105,8 @@ export default defineConfig({
 });
 ```
 
-Then, in the package.json file, add a script for this module and add it to the "build:all" script too.
-```
+Then, in the `package.json` file, add a script for this module and add it to the `build:all` script too.
+```json
  "scripts": {
     ...
     "build:examplePopup": "vite build --config vite.examplePopup.config.ts",
@@ -113,8 +114,8 @@ Then, in the package.json file, add a script for this module and add it to the "
   },
 ```
 
-If making more than one module, repeat this process: create the vite config file, add a script in the package.json file and modify the "build:all" script, for example:
-```
+If making more than one module, repeat this process: create the vite config file, add a script in the `package.json` file and modify the `build:all` script, for example:
+```json
  "scripts": {
     ...
     "build:examplePopup": ...

@@ -57,7 +57,7 @@ Get information about the existing layers on the current scenario version.
 </details>
 ----
 
-#### `getLayersOfType()`
+#### `getLayersOfType(layerType: string)`
 
 Get information about the layers of a specific type on the current scenario version.
 * **Parameters:**
@@ -116,9 +116,11 @@ Get geometries of all layers on the current scenario version.
 </details>
 ----
 
-#### `getGeometriesByLayer()`
+#### `getGeometriesByLayer(layerType: string)`
 
 Get geometries of layers of a specific type on the current scenario version.
+* **Parameters:**
+    * `layerType` — type of layer. Examples: "ScenarioPOSP", "ScenarioIS", "ScenarioES", "POSA", "Edit"
 
 <details>
 <summary>Example response</summary>
@@ -143,7 +145,7 @@ layerType = "ScenarioPOSP"
 
 ----
 
-#### `executeFunctionModule()`
+#### `executeFunctionModule(extension: string, module: string, input: any, fileOutput: boolean = false)`
 
 Execute an extension function module (in the back-end) and retrieve its result.
 * **Parameters:**

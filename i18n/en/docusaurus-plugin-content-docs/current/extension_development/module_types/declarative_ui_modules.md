@@ -73,7 +73,7 @@ These modules are a way to easily create a simple form interface, to be displaye
 
 Here is an example of a declarative UI module with parameters of each type:
 
-```
+```json
 {
   "id": "full-declarative-ui-example",
   "type": "interface-declarative",
@@ -151,7 +151,7 @@ This produces the following form interface (please note that the "Context parame
 
 
 Another example, coming from the GeoJSON Export extension. In this case, the output is a (zip) file, so the button will trigger the execution of the `geojson-function` module and then the download of its output file.
-```
+```json
 {
   "id": "geojson-export-popup",
   "type": "interface-declarative",

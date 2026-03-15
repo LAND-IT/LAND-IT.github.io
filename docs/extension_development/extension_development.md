@@ -6,4 +6,4 @@ sidebar_position: 4
 
 # Desenvolvimento de Extensões
 
-Esta página encontra-se em construção.
+As capacidades do LAND IT podem ser expandidas através de extensões. Esta secção explica como estas são desenvolvidas.
