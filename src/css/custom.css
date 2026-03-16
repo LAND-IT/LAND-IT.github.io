@@ -112,6 +112,10 @@ html[data-mode='iframe'] .navbar__item[sidebarId="homeSidebar"] {
   display: block;
 }
 
+html[data-mode='iframe'] .locale-dropdown {
+  display: none;
+}
+
 
 
 

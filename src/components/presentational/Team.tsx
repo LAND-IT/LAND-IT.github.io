@@ -20,11 +20,11 @@ const people: Person[] = [
         profilePicture: "/images/profile_pictures/member3.jpg",
         extraStyle: "object-position: 0% 60%;"
     },
-    {
-        name: "Francisco Freire", job: translate({id: "team.member4.role"}),
-        profilePicture: "/images/profile_pictures/member4.jpg",
-        extraStyle: "object-position: 0% 0%;"
-    },
+    // {
+    //     name: "Francisco Freire", job: translate({id: "team.member4.role"}),
+    //     profilePicture: "/images/profile_pictures/member4.jpg",
+    //     extraStyle: "object-position: 0% 0%;"
+    // },
     {
         name: "Francisca Silva", job: translate({id: "team.member5.role"}),
         profilePicture: "/images/profile_pictures/member5.jpeg",

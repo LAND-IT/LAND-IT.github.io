@@ -2,14 +2,14 @@ import {Card} from "primereact/card";
 import {Button} from "primereact/button";
 import {Timeline} from "primereact/timeline";
 import {Icon} from "@iconify/react";
-import styles from './projects.module.css';
+import styles from './publications.module.css';
 import {TimelineEvent} from "../../Definitions";
-import useProjects from "../../hooks/useProjects";
+import usePublications from "../../hooks/usePublications";
 import { useState, useEffect } from 'react';
 import { translate } from "@docusaurus/Translate";
 
-export default function RelatedProjects() {
-    const events: TimelineEvent[] = useProjects();
+export default function RelatedPublications() {
+    const events: TimelineEvent[] = usePublications();
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function RelatedProjects() {
                 <Icon style={{color: item.color}} height={"30px"} icon={item.icon}/>}
                   title={item.title} subTitle={<span>{item.author} <br/> {item.date} </span>}>
                 <p>{item.description}</p>
-                {item.link && <Button label={translate({id:"projects.access"})} onClick={() => window.open(item.link, '_blank')}
+                {item.link && <Button label={translate({id:"publications.access"})} onClick={() => window.open(item.link, '_blank')}
                                       className="p-button-text"></Button>}
             </Card>
         );

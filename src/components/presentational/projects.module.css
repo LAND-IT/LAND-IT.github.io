@@ -1,25 +1,24 @@
-.icons {
-    height: 40px;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 80% !important;
-}
-
 .card {
-    padding: 10px;
+    width: 40vw;
 }
 
-:global(.p-card) {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-color);
+:global(.p-card-header) {
+    text-align: center;
 }
 
-:global([data-theme='dark'] .p-card) {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-color);
+:global(.p-card-header) img {
+    width: unset !important;
+    max-width: 100%;
 }
 
+@media (max-width: 996px) {
+    .card {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}

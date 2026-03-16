@@ -1,0 +1,25 @@
+.icons {
+    height: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 80% !important;
+}
+
+.card {
+    padding: 10px;
+}
+
+:global(.p-card) {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color);
+}
+
+:global([data-theme='dark'] .p-card) {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color);
+}
+

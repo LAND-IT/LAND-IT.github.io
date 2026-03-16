@@ -112,6 +112,7 @@ const config: Config = {
         {
           type: "localeDropdown",
           position: "right",
+          className: "locale-dropdown",
         },
       ],
     },
