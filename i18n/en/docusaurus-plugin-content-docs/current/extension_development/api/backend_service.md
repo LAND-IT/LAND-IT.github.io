@@ -143,6 +143,7 @@ Perform a union operation between two layers of geometries.
 * **Parameters:**
     * `first` — list of geometries of the first layer
     * `second` — list of geometries of the second layer
+    * `overlappedOriginally` true if one of the input layers has any overlapping geometries, false otherwise
 * **Returns:** List of geometries that result from performing the union operation
 ----
 

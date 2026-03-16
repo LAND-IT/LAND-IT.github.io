@@ -121,7 +121,7 @@ Executa uma operação de diferença entre duas camadas de geometrias (entryLaye
 * **Parâmetros:**
     * `entryLayer` — lista de geometrias da camada de entrada
     * `overLayer` — lista de geometrias da camada de sobreposição
-    * `returnMulti` — se verdadeiro retorna multi-geometrias, se falso divide-as em geometrias individuais
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de diferença
 ----
 
@@ -132,7 +132,7 @@ Executa uma operação de interseção entre duas camadas de geometrias.
 * **Parâmetros:**
     * `first` — lista de geometrias da primeira camada
     * `second` — lista de geometrias da segunda camada
-    * `returnMulti` — se verdadeiro retorna multi-geometrias, se falso divide-as em geometrias individuais
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de interseção
 ----
 
@@ -143,6 +143,7 @@ Executa uma operação de união entre duas camadas de geometrias.
 * **Parâmetros:**
     * `first` — lista de geometrias da primeira camada
     * `second` — lista de geometrias da segunda camada
+    * `overlappedOriginally` true se uma das camadas de input tem geometrias sobrepostas, false caso contrário
 * **Retorno:** Lista de geometrias resultantes da operação de união
 ----
 
@@ -153,7 +154,7 @@ Executa uma operação de interseção à esquerda (*left intersection*) entre d
 * **Parâmetros:**
     * `first` — lista de geometrias da primeira camada (a da esquerda)
     * `second` — lista de geometrias da segunda camada
-    * `returnMulti` — se verdadeiro retorna multi-geometrias, se falso divide-as em geometrias individuais
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de interseção à esquerda
 ----
 
@@ -164,5 +165,5 @@ Executa uma operação de interseção total (*full intersection*) entre duas ca
 * **Parâmetros:**
     * `first` — lista de geometrias da primeira camada
     * `second` — lista de geometrias da segunda camada
-    * `returnMulti` — se verdadeiro retorna multi-geometrias, se falso divide-as em geometrias individuais
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de interseção total
