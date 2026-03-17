@@ -167,3 +167,13 @@ Executa uma operação de interseção total (*full intersection*) entre duas ca
     * `second` — lista de geometrias da segunda camada
     * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de interseção total
+----
+
+#### `List<GeometryDTO> dissolveGeometries(List<GeometryDTO> geoms, boolean returnMulti) throws IOException`
+
+Executa uma operação de dissolução (*dissolve*) numa camada de geometrias.
+
+* **Parâmetros:**
+    * `geoms` — lista de geometrias da camada a dissolver
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
+* **Retorno:** Lista de geometrias resultantes da operação de dissolução
