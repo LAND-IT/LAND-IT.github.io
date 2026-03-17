@@ -458,6 +458,6 @@
   },
 
   "open_source.1.description": {
-      "message": "Este projeto trata-se de uma extensão para o OpenLayers, uma biblioteca de código aberto para visualização de mapas. Esta extensão tem como objetivo disponibilizar um editor de estilos de geometrias com uma interface intuitiva para um utlizador final. São disponibilizados três tipos de estilos: símbolo único, categorizado e graduado."
+      "message": "Este projeto trata-se de uma extensão para o OpenLayers, uma biblioteca de código aberto para visualização de mapas. Esta extensão tem como objetivo disponibilizar um editor de estilos de geometrias com uma interface intuitiva para um utlizador final. São disponibilizados quatro tipos de estilos: símbolo único, categorizado e quantitativo e baseado em regras."
   }
 }
