@@ -19,3 +19,22 @@ diogo-moreira:
 francisco-freire:
   name: Francisco Freire
   title: LAND IT - Tech Lead
+
+francisca-silva:
+  name: Francisca Silva
+  title: LAND IT - Tech Lead
+  url: https://github.com/francisca-aflomacao
+  image_url: https://github.com/francisca-aflomacao.png
+  page: true
+  socials:
+    github: francisca-aflomacao
+
+bruno-carmo:
+  name: Bruno Carmo
+  title: LAND IT - Tech Lead
+  url: https://github.com/BrunoMiguelDC
+  image_url: https://github.com/BrunoMiguelDC.png
+  page: true
+  socials:
+    github: BrunoMiguelDC
+
