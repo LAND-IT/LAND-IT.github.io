@@ -18,6 +18,7 @@
   "dependencies": {
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.1",
     "@emailjs/browser": "^4.4.1",
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^6.0.2",
