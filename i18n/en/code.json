@@ -459,5 +459,26 @@
 
   "open_source.1.description": {
     "message": "This project is an extension for OpenLayers, an open-source library for map visualization. The extension aims to provide a geometry style editor with an intuitive interface for end users. Four types of styles are available: unique symbol, categorized, quantitative and based on rules."
+  },
+
+  "contact.contact": {
+    "message": "Contact us"
+  },
+
+   "contact.name": {
+    "message": "Name"
+  },
+
+  "contact.email": {
+    "message": "Email"
+  },
+
+  "contact.message": {
+    "message": "Message"
+  },
+
+  "contact.send": {
+    "message": "Send"
   }
+
 }
