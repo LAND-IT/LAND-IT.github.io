@@ -110,6 +110,11 @@ const config: Config = {
           position: "left",
         },
         {
+          to: "/contact",
+          label: "Contact",
+          position: "left",
+        },
+        {
           type: "localeDropdown",
           position: "right",
           className: "locale-dropdown",
