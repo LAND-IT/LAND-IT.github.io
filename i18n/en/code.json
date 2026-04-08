@@ -479,6 +479,14 @@
 
   "contact.send": {
     "message": "Send"
+  },
+
+  "contact.success": {
+    "message": "Message sent successfully"
+  },
+
+  "contact.error": {
+    "message": "Error sending message"
   }
 
 }

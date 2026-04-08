@@ -474,10 +474,18 @@
   },
 
   "contact.message": {
-    "message": "Messagem"
+    "message": "Mensagem"
   },
 
   "contact.send": {
     "message": "Enviar"
+  },
+
+  "contact.success": {
+    "message": "Mensagem enviada com sucesso"
+  },
+
+  "contact.error": {
+    "message": "Erro ao enviar mensagem"
   }
 }

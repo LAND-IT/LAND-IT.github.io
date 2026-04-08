@@ -26,7 +26,7 @@ emailjs.sendForm(
 )
 .then(() => {
   toast.dismiss();
-  toast.success("Mensagem enviada com sucesso!", {
+  toast.success(translate({ id: "contact.success" }), {
     hideProgressBar: true,
     autoClose: 3000,
     theme: "colored"
@@ -36,7 +36,7 @@ emailjs.sendForm(
 })
 .catch(() => {
   toast.dismiss();
-  toast.error("Erro ao enviar mensagem.", {
+  toast.error(translate({ id: "contact.error" }), {
     hideProgressBar: true,
     autoClose: 3000,
     theme: "colored"
@@ -46,7 +46,7 @@ emailjs.sendForm(
 };
 
 return ( <Layout title={translate({id:"contact.contact"})}> <main> <div className="container margin-vert--lg">
-      <Card title="Contacte-nos" className={styles.card}>
+      <Card title={translate({id:"contact.contact"})} className={styles.card}>
         <form ref={formRef} onSubmit={sendEmail} className={styles.form}>
 
           <label className={styles.fieldLabel}>{translate({id:"contact.name"})}</label>
