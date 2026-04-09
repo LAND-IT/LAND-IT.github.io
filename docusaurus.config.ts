@@ -121,12 +121,7 @@ const config: Config = {
           to: "/contact",
           label: "Contact",
           position: "left",
-        },
-        {
-          type: "localeDropdown",
-          position: "right",
-          className: "locale-dropdown",
-        },
+        }
       ],
     },
     footer: {
