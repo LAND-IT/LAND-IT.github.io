@@ -18,5 +18,9 @@
   "item.label.Home": {
     "message": "Página Inicial",
     "description": "Navbar item with label Home"
+  },
+  "item.label.Contact": {
+    "message": "Contacte-nos",
+    "description": "Navbar item with label Contacte-nos"
   }
 }

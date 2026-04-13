@@ -18,6 +18,8 @@
   "dependencies": {
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.1",
+    "@emailjs/browser": "^4.4.1",
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^6.0.2",
     "@mdx-js/react": "^3.0.0",
@@ -29,7 +31,8 @@
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
     "react-dom": "^19.0.0",
-    "react-iv-viewer": "^1.0.3"
+    "react-iv-viewer": "^1.0.3",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",

@@ -116,6 +116,12 @@ html[data-mode='iframe'] .locale-dropdown {
   display: none;
 }
 
+.navbar__search {
+  display: none;
+}
 
+[class*="docs"] .navbar__search {
+  display: block;
+}
 
 

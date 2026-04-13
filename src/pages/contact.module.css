@@ -1,0 +1,42 @@
+.card {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+:global(.p-card-header) {
+    text-align: center;
+}
+
+:global(.p-card-header) img {
+    width: unset !important;
+    max-width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fieldLabel {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form button {
+  align-self: center;
+}
+
+@media (max-width: 996px) {
+    .card {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}

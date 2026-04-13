@@ -76,7 +76,15 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["pt", "en"],
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: "images/social-card.jpg",
@@ -110,10 +118,10 @@ const config: Config = {
           position: "left",
         },
         {
-          type: "localeDropdown",
-          position: "right",
-          className: "locale-dropdown",
-        },
+          to: "/contact",
+          label: "Contact",
+          position: "left",
+        }
       ],
     },
     footer: {
