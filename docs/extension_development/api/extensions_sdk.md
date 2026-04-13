@@ -155,3 +155,11 @@ Executa um módulo de função de uma extensão (no back-end) e obtém o seu res
     * `fileOutput` — true se o módulo retornar um ficheiro (binário), false se retornar json.
 
 ----
+
+#### `showToast(message: string, type: string)`
+
+Apresentar uma mensagem "toast"
+* **Parâmetros:**
+    * `message` — o texto a apresentar na mensagem "toast"
+    * `type` — tipo de "toast". Valores aceites: 'info' | 'success' | 'warning' | 'error' | 'default'
+----

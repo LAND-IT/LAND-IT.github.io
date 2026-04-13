@@ -87,11 +87,11 @@ Atualiza a informação de uma camada de edição.
 
 #### `Uni<List<GeometryDTO>> addPolygonToLayer(Long layerId, GeometryReqDTO dto, String aigp)`
 
-Adiciona um novo polígono a uma camada.
+Adiciona novos polígonos a uma camada.
 
 * **Parâmetros:**
     * `layerId` — o id da camada onde o polígono será adicionado
-    * `dto` — objeto GeometryReqDTO com a informação do polígono
+    * `dtos` — lista de objetos GeometryReqDTO com a informação dos polígonos a adicionar
     * `aigp` — nome da AIGP
 * **Retorno:** Lista contendo as geometrias adicionadas
 ----
