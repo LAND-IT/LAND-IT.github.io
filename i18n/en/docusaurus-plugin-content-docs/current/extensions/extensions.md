@@ -17,7 +17,7 @@ id: template-extension /* extension id */
 sidebar_label: Extension Template /* extension name */
 ---
 
-## Extension Template
+# Extension Template
 
 - **ID**: template-extension
 - **Author**: Diogo Moreira
