@@ -87,11 +87,11 @@ Update the information of an edit layer.
 
 #### `Uni<List<GeometryDTO>> addPolygonToLayer(Long layerId, GeometryReqDTO dto, String aigp)`
 
-Add a new polygon to a layer.
+Add new polygons to a layer.
 
 * **Parameters:**
     * `layerId` — the id of the layer where to add the polygon
-    * `dto` — GeometryReqDTO object with the polygon's information
+    * `dtos` — list of GeometryReqDTO objects with the information of the polygons to add
     * `aigp` — name of the AIGP
 * **Returns:** List containing the added geometries
 ----
@@ -167,3 +167,13 @@ Perform a full intersection operation between two layers of geometries.
     * `second` — list of geometries of the second layer
     * `returnMulti` — if true return multi-geometries, if false split them into individual geometries
 * **Returns:** List of geometries that result from performing the full intersection operation
+----
+
+#### `List<GeometryDTO> dissolveGeometries(List<GeometryDTO> geoms, boolean returnMulti) throws IOException`
+
+Perform a dissolve operation on a layer of geometries.
+
+* **Parameters:**
+    * `first` — list of geometries of the layer
+    * `returnMulti` — if true return multi-geometries, if false split them into individual geometries
+* **Returns:** List of geometries that result from performing the dissolve operation

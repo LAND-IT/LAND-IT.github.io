@@ -155,3 +155,11 @@ Execute an extension function module (in the back-end) and retrieve its result.
     * `fileOutput` — true if the module returns a (binary) file, false if it returns json
 
 ----
+
+#### `showToast(message: string, type: string)`
+
+Display a toast message
+* **Parameters:**
+    * `message` — the text to display on the toast
+    * `type` — the type of toast. Accepted values: 'info' | 'success' | 'warning' | 'error' | 'default'
+----
