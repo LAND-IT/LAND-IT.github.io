@@ -13,10 +13,18 @@ Assim, a conversa não fica perdida fora da plataforma. Todos conseguem ver o qu
 
 Use as discussões quando quiser pedir opinião sobre uma alteração, explicar porque desenhou um polígono de certa forma, validar uma proposta, deixar uma nota para outro utilizador ou registar uma decisão da equipa. É uma forma simples de manter o trabalho e a conversa no mesmo sítio.
 
+Também pode usar as discussões como um diário de trabalho. Por exemplo, pode deixar uma nota no fim do dia a dizer o que fez, o que ficou por rever e onde deve continuar no dia seguinte. Isto ajuda outra pessoa a pegar no trabalho mais tarde. Também ajuda o próprio utilizador a lembrar-se do ponto onde ficou.
+
 Existem dois tipos de discussão:
 
 - **Cenário/Versão**: para assuntos gerais da versão atual.
 - **Polígonos**: para assuntos ligados a uma ou mais áreas do mapa.
+
+## Tutorial em Vídeo
+
+Veja este vídeo se quiser acompanhar o processo completo. O vídeo mostra como abrir a ferramenta, criar uma discussão, escolher o tipo de discussão e associar polígonos.
+
+{<video style={{width:"100%"}} src={require('/videos/Discussions/Tutorial 1 - Discussions.mp4').default} controls/>}
 
 ## Abrir o Painel de Discussões
 
@@ -239,6 +247,16 @@ Isto ajuda todos os utilizadores a perceberem que área está a ser discutida.
 
 *Lista de polígonos associados dentro da discussão, com a referência do polígono visível.*
 
+## Etiquetas das Discussões
+
+As etiquetas, ou tags, ajudam a organizar as discussões por tema.
+
+Uma etiqueta pode ser usada em várias discussões. Se uma etiqueta estiver a ser usada em mais do que uma discussão, não é possível apagá-la logo. Primeiro, a etiqueta tem de ser removida de todas as discussões onde está a ser usada.
+
+Se criar uma etiqueta por engano e ela ainda não estiver a ser usada em nenhuma discussão, pode apagá-la de imediato.
+
+Se outra pessoa adicionar essa etiqueta por engano a uma discussão, use as próprias discussões para falar com essa pessoa. Assim, podem combinar quem remove a etiqueta e em que discussão.
+
 ## Gerir uma Discussão
 
 Dentro de uma discussão existe um menu de três pontos.
@@ -274,6 +292,8 @@ Use **Cenário/Versão** para assuntos gerais da versão atual.
 Use **Polígonos** quando o assunto estiver ligado a uma área concreta do mapa.
 
 Antes de adicionar polígonos, confirme sempre a camada selecionada no painel **Camadas**.
+
+Use discussões para deixar notas sobre o seu histórico de trabalho.
 
 Dê títulos claros às discussões.
 
