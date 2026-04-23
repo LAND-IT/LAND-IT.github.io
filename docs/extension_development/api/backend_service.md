@@ -87,11 +87,11 @@ Atualiza a informação de uma camada de edição.
 
 #### `Uni<List<GeometryDTO>> addPolygonToLayer(Long layerId, GeometryReqDTO dto, String aigp)`
 
-Adiciona um novo polígono a uma camada.
+Adiciona novos polígonos a uma camada.
 
 * **Parâmetros:**
     * `layerId` — o id da camada onde o polígono será adicionado
-    * `dto` — objeto GeometryReqDTO com a informação do polígono
+    * `dtos` — lista de objetos GeometryReqDTO com a informação dos polígonos a adicionar
     * `aigp` — nome da AIGP
 * **Retorno:** Lista contendo as geometrias adicionadas
 ----
@@ -167,3 +167,13 @@ Executa uma operação de interseção total (*full intersection*) entre duas ca
     * `second` — lista de geometrias da segunda camada
     * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
 * **Retorno:** Lista de geometrias resultantes da operação de interseção total
+----
+
+#### `List<GeometryDTO> dissolveGeometries(List<GeometryDTO> geoms, boolean returnMulti) throws IOException`
+
+Executa uma operação de dissolução (*dissolve*) numa camada de geometrias.
+
+* **Parâmetros:**
+    * `geoms` — lista de geometrias da camada a dissolver
+    * `returnMulti` — se true retorna multi-geometrias, se false divide-as em geometrias individuais
+* **Retorno:** Lista de geometrias resultantes da operação de dissolução
