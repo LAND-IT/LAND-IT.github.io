@@ -6,6 +6,14 @@ sidebar_position: 6
 
 # Extensões
 
+Pode encontrar o menu de extensões ao clicar sobre o seu perfil, conforme indicado na imagem:
+<img src={require('/static/images/extensions/extensions-menu-location.png').default} />
+
+Aqui poderá ver a lista de extensões que se encontram disponíveis no LAND IT. Para começar a utilizar uma extensão, é necessário ativá-la primeiro, utilizando o botão "Ativar". Para desativar uma extensão, pressione novamente o mesmo botão.
+<img src={require('/static/images/extensions/extensions-menu-enable-example.png').default} />
+
+## Documentação de uma Extensão
+
 Para documentar uma extensão, utilize o seguinte template:
 
 <details>
@@ -27,7 +35,7 @@ sidebar_label: Template de Extensão /* nome da extensão */
 
 ### Funcionamento
 
-Utilize esta secção para explicar como funciona a extensão e como utilizar a mesma. Pode incluir texto, imagens, etc.
+Utilize esta secção para explicar em maior detalhe como funciona a extensão e como utilizar a mesma. Pode incluir texto, imagens, etc.
 
 ### *Changelog*
 
@@ -42,6 +50,9 @@ Utilize esta secção para documentar as alterações realizadas em cada versão
 ```
 </details>
 
+<details>
+<summary>Exemplo</summary>
+
 ## Template de Extensão
 
 - **ID**: template-extension
@@ -52,7 +63,7 @@ Utilize esta secção para documentar as alterações realizadas em cada versão
 
 ### Funcionamento
 
-Utilize esta secção para explicar como funciona a extensão e como utilizar a mesma. Pode incluir texto, imagens, etc.
+Utilize esta secção para explicar em maior detalhe como funciona a extensão e como utilizar a mesma. Pode incluir texto, imagens, etc.
 
 ### *Changelog*
 
@@ -64,3 +75,4 @@ Utilize esta secção para documentar as alterações realizadas em cada versão
   * ...
 - 1.0.0
   * Versão inicial da extensão
+</details>
