@@ -114,6 +114,83 @@ Edita polígonos selecionados de uma camada.
     * `dto` — objeto EditGeometriesDTO contendo a informação dos polígonos a atualizar
 ----
 
+#### `Uni<ScenariosFilterDTO> saveFilter(Long scenarioId, Long versionId, ScenariosFilterInputDTO dto)`
+
+Cria e guarda um novo filtro para o cenário e versão especificados.
+
+Para criar um filtro, é necessário um objeto ScenariosFilterInputDTO. Por exemplo:
+<details>
+<summary>Exemplo de criação de ScenariosFilterInputDTO</summary>
+
+```java
+List<FilterExpression.Layer> layers = List.of(new FilterExpression.Layer("POSP", json));
+FilterExpression exp = new FilterExpression("Example Filter", layers, true);
+ScenariosFilterInputDTO filterInput = new ScenariosFilterInputDTO(List.of(exp));
+```
+
+Onde `json` é uma string JSON JsonLogic válida. Aqui está um exemplo simples de uma regra JSON:
+```json
+{
+   "and": [
+       { "==": [{ "var": "POSP" }, "Florestas de eucalipto"] },
+       { ">=": [{ "var": "area" }, 30000] }
+   ]
+}
+```
+</details>
+
+* **Parâmetros:**
+    * `scenarioId` — o id do cenário
+    * `versionId` — o id da versão
+    * `dto` — objeto ScenariosFilterInputDTO com informações sobre o filtro a criar
+* **Retorno:** objeto ScenariosFilterDTO que representa o filtro criado.
+----
+
+#### `Uni<ScenariosFilterDTO> updateFilter(Long scenarioId, Long versionId, Long filterId, ScenariosFilterInputDTO dto)`
+
+Atualiza um filtro existente para o cenário, versão e ID de filtro especificados.
+
+* **Parâmetros:**
+    * `scenarioId` — o id do cenário
+    * `versionId` — o id da versão
+    * `filterId` — o id do filtro a atualizar
+    * `dto` — objeto ScenariosFilterInputDTO com informações sobre o filtro a atualizar. Consulte a documentação do método saveFilter para mais informações sobre este objeto.
+
+* **Retorno:** objeto ScenariosFilterDTO que representa o filtro atualizado.
+----
+
+#### `Uni<ScenariosFilterDTO> deleteFilter(Long scenarioId, Long versionId, Long filterId)`
+
+Elimina um filtro específico com base no ID do filtro, para o cenário e versão indicados.
+
+* **Parâmetros:**
+    * `scenarioId` — o id do cenário
+    * `versionId` — o id da versão
+    * `filterId` — o id do filtro a eliminar
+* **Retorno:** objeto ScenariosFilterDTO que representa o filtro eliminado.
+----
+
+#### `Uni<ScenariosFilterDTO> getFilter(Long scenarioId, Long versionId, Long filterId)`
+
+Obtém um filtro específico pelo seu ID, para o cenário e versão indicados.
+
+* **Parâmetros:**
+    * `scenarioId` — o id do cenário
+    * `versionId` — o id da versão
+    * `filterId` — o id do filtro a obter
+* **Retorno:** objeto ScenariosFilterDTO que representa o filtro pedido.
+----
+
+#### `Uni<ScenariosFilterDTO> getUserFilters(Long scenarioId, Long versionId)`
+
+Obtém a lista de filtros de um utilizador aplicados ao cenário e versão especificados.
+
+* **Parâmetros:**
+    * `scenarioId` — o id do cenário
+    * `versionId` — o id da versão
+* **Retorno:** objeto ScenariosFilterDTO com os filtros do utilizador para o cenário e versão indicados.
+----
+
 #### `List<GeometryDTO> differenceBetweenLayers(List<GeometryDTO> entryLayer, List<GeometryDTO> overLayer, boolean returnMulti) throws IOException`
 
 Executa uma operação de diferença entre duas camadas de geometrias (entryLayer - overLayer).
