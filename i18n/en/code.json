@@ -452,6 +452,9 @@
   "team.member7.role": {
     "message": "Full-Stack Engineer"
   },
+  "team.member8.role": {
+    "message": "Full-Stack Engineer"
+  },
 
   "sections.open_source": {
     "message": "Open Source Projects"
