@@ -63,13 +63,14 @@ export default function usePublications() {
         //     description: translate({id: "publications.6.description"}),
         // },
         {
-            status: Status.ONGOING,
+            status: Status.CONCLUDED,
             date: translate({id: "publications.7.date"}),
-            icon: 'pepicons-pop:arrows-spin-circle-filled',
-            color: '#607D8B',
+            icon: 'pepicons-pop:checkmark-circle-filled',
+            color: 'var(--primary-color)',
             title: translate({id: "publications.7.title"}),
             author: "Diogo Moreira",
             description: translate({id: "publications.7.description"}),
+            link: 'https://drive.google.com/file/d/1C6qpFf6HgVEN7VZYKALIrb2de-TLYbBY/view?usp=drive_link'
         }
     ];
 }
