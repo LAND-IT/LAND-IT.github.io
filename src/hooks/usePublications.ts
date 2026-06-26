@@ -45,13 +45,14 @@ export default function usePublications() {
             link: 'https://drive.google.com/open?id=1hn60KutOxTpWiLOk1xnhBUHa0BQUTXBC&usp=drive_fs'
         },
         {
-            status: Status.ONGOING,
+            status: Status.CONCLUDED,
             date: translate({id: "publications.5.date"}),
-            icon: 'pepicons-pop:arrows-spin-circle-filled',
-            color: '#607D8B',
+               icon: 'pepicons-pop:checkmark-circle-filled',
+            color: 'var(--primary-color)',
             title: translate({id: "publications.5.title"}),
             author: "Pedro Grilo",
             description: translate({id: "publications.5.description"}),
+            link: 'https://drive.google.com/file/d/1Mnp7SZVemXASNpMdqEwAoZc05-qYIgZm/view?usp=drive_link'
         },
         // {
         //     status: Status.ONGOING,

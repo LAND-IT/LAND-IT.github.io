@@ -51,7 +51,7 @@
     "message": "Master’s Thesis: LAND IT - Assisted and Collaborative Territorial Reorganisation Editing"
   },
   "publications.5.date": {
-    "message": "Ongoing"
+    "message": "June 2026"
   },
   "publications.5.description": {
     "message": "Currently, LAND IT has very basic collaboration features, such as timers for handling requests. This thesis aims to identify and improve all use cases where real-time updates are essential. Furthermore, it will explore collaborative map editing, enabling multiple users to draw geometries within the same scenario simultaneously."
@@ -69,7 +69,7 @@
     "message": "Master’s Thesis: LAND IT – Development of an Extension System"
   },
   "publications.7.date": {
-    "message": "Ongoing"
+    "message": "June 2026"
   },
   "publications.7.description": {
     "message": "As LAND IT is a growing platform that continuously evolves alongside the development of AIGP, new functionalities are always required. To facilitate this ongoing integration, the objective of this thesis is to develop an extension system that enables the modular addition of new features without modifying the system’s core code."
