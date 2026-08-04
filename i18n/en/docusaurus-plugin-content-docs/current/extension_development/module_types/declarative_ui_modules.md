@@ -10,7 +10,9 @@ These modules are a way to easily create a simple form interface, to be displaye
 
 - **id** [required]: string to identify the module within the extension.
 - **type** [required]: "interface-declarative", for declarative UI modules.
-- **subtype** [required]: the type of UI module, which dictates where it will appear in the frontend. Right now, the only one supported is "scenario-popup", to make the UI module accessible from the scenario editing page.
+- **subtype** [required]: the type of UI module, which dictates where it will appear in the frontend. Right now, the following subtypes are supported:
+  - `scenario-popup`: opens the module in a (modal) pop-up, accessible from the scenario editing page.
+  - `scenario-panel`: opens the module in a panel, next to the map, in the scenario editing page. It does not block the rest of the interface, unlike the pop-up.
 - **bindsTo** [required]: the id of the function module to run when the form is submitted.
 - **displayName**: user-friendly string that appears in the menus and as the header of the UI module.
 - **ui**: object that describes how the interface itself should be built, with itself being composed of several fields:

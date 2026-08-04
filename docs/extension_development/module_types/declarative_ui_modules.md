@@ -10,7 +10,9 @@ Estes módulos permitem criar facilmente uma interface de formulário simples, a
 
 - **id** [obrigatório]: *string* para identificar o módulo dentro da extensão.
 - **type** [obrigatório]: "interface-declarative", para módulos de interface declarativos.
-- **subtype** [obrigatório]: o tipo de módulo de UI, que dita onde aparecerá no *front-end*. Atualmente, o único suportado é "scenario-popup", para tornar o módulo de UI acessível a partir da página de edição de cenário.
+- **subtype** [obrigatório]: o tipo de módulo de UI, que dita onde aparecerá no *front-end*. Atualmente, são suportados os seguintes subtipos:
+    - `scenario-popup`: abre o módulo num pop-up (modal), acessível a partir da página de edição de cenário.
+    - `scenario-panel`: abre o módulo num painel, ao lado do mapa, na página de edição de cenário. Não bloqueia o resto da interface, ao contrário do pop-up.
 - **bindsTo** [obrigatório]: o ID do módulo de função a executar quando o formulário é submetido.
 - **displayName**: *string* legível para o utilizador que aparece nos menus e como cabeçalho do módulo de UI.
 - **ui**: objeto que descreve como a própria interface deve ser construída, sendo composto por vários campos:
