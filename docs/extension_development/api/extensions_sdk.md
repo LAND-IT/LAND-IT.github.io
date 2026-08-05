@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # LAND IT Front-end Extensions SDK
 
-Esta API pode ser utilizada pelos módulos de front-end de uma extensão (Módulos de UI personalizados) para interagir com a aplicação front-end do LAND IT e obter dados, tais como dados de contexto (cenário e versão atual onde o módulo está a ser executado/exibido), camadas disponíveis e geometrias.
+Esta API pode ser utilizada pelos módulos de front-end de uma extensão (Módulos de UI personalizados) para interagir com a aplicação front-end do LAND IT e obter dados, tais como dados de contexto (detalhes do cenário e versão atual onde o módulo está a ser executado/exibido), camadas disponíveis e geometrias.
 
 Estes métodos são assíncronos (retornam Promises), uma vez que o método `postMessage()` é utilizado para a comunicação entre o IFrame da extensão e a aplicação principal.
 
@@ -23,6 +23,28 @@ Obtém as "props" de contexto para o componente da extensão (scenarioId e versi
 {
   "scenarioId": 1,
   "versionId": 2
+}
+```
+</details>
+----
+
+#### `getScenarioVersion()`
+
+Obtém detalhes do cenário e versão atuais.
+<details>
+<summary> Exemplo de resposta </summary>
+
+```
+{
+    "scenarioId": 3,
+    "version": 1,
+    "title": "Test - Cardigos",
+    "description": "Imported scenario for testing",
+    "versionName": "First Version",
+    "versionDescription": "This is the first version",
+    "aigp": "Cardigos",
+    "parentVersion": null,
+    "isOwner": true,
 }
 ```
 </details>
@@ -162,4 +184,12 @@ Apresentar uma mensagem "toast"
 * **Parâmetros:**
     * `message` — o texto a apresentar na mensagem "toast"
     * `type` — tipo de "toast". Valores aceites: 'info' | 'success' | 'warning' | 'error' | 'default'
+----
+
+#### `notifyChange(resourceType: string)`
+
+Notifica a aplicação de front-end de uma mudanca num recurso, para que a página seja atualizada de acordo.
+* **Parâmetros:**
+    * `resourceType` — tipo de recurso que foi atualizado. Valores aceites: 'filters' (por enquanto, apenas este está disponível)
+
 ----

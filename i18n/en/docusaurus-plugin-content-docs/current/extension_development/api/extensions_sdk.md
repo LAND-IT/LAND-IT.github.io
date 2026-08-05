@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # LAND IT Front-end Extensions SDK
 
-This API can be used by the front-end modules of an extension (Custom UI modules) to interact with the LAND IT front-end application and retrieve data such as context data (current scenario and version where the module is being executed/displayed), available layers and geometries.
+This API can be used by the front-end modules of an extension (Custom UI modules) to interact with the LAND IT front-end application and retrieve data such as context data (details about the current scenario and version where the module is being executed/displayed), available layers and geometries.
 
 These methods are async (return Promises), since the `postMessage()` method is used for communication between the extension IFrame and the main application.
 
@@ -14,7 +14,7 @@ These methods are async (return Promises), since the `postMessage()` method is u
 
 #### `getProps()`
 
-Get context "props" for the extension component (scenarioId and versionId)
+Get context "props" for the extension component (scenarioId and versionId).
 
 <details>
 <summary>Example response</summary>
@@ -23,6 +23,28 @@ Get context "props" for the extension component (scenarioId and versionId)
 {
   "scenarioId": 1,
   "versionId": 2
+}
+```
+</details>
+----
+
+#### `getScenarioVersion()`
+
+Get details of the current scenario and version.
+<details>
+<summary> Example response </summary>
+
+```
+{
+    "scenarioId": 3,
+    "version": 1,
+    "title": "Test - Cardigos",
+    "description": "Imported scenario for testing",
+    "versionName": "First Version",
+    "versionDescription": "This is the first version",
+    "aigp": "Cardigos",
+    "parentVersion": null,
+    "isOwner": true,
 }
 ```
 </details>
@@ -162,4 +184,12 @@ Display a toast message
 * **Parameters:**
     * `message` — the text to display on the toast
     * `type` — the type of toast. Accepted values: 'info' | 'success' | 'warning' | 'error' | 'default'
+----
+
+#### `notifyChange(resourceType: string)`
+
+Notify the front-end application of a change in a resource, so that the page can be updated accordingly.
+* **Parameters:**
+    * `resourceType` — the type of resource that was updated. Accepted values: 'filters' (for now, only this is available)
+
 ----
