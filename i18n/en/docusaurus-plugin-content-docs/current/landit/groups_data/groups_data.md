@@ -1,0 +1,24 @@
+---
+id: groups_data_intro
+sidebar_label: Groups Data
+slug: /groups-data-introduction
+sidebar_position: 5
+---
+
+# Groups Data
+
+## Video Tutorials
+
+### Additional Features
+
+This video shows additional features of the groups data table, namely filtering and sorting in the table, selecting, copying, and pasting cells, and importing and exporting CSV files.
+
+{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 3 - Funcionalidades adicionais.mp4').default} controls/>}
+
+To import a CSV file with new rows, the column headers in the file must match each column's internal code, not the name shown in the table header.
+
+### Adding, Removing, and Merging Rows
+
+This video shows how to manage rows in the groups data table, from adding a new row, both in the main table and afterward in a detail, to deleting a row or merging two rows.
+
+{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 5 - Adicionar, remover e juntar linhas.mp4').default} controls/>}

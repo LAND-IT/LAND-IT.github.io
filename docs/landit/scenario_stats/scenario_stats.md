@@ -2,6 +2,7 @@
 id: scenario_stats_intro
 sidebar_label: Estatísticas de Cenários
 slug: /scenario-stats-introduction
+sidebar_position: 2
 ---
 
 # Estatísticas de Cenários
