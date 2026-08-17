@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ### Context
 
-This video aims to provide context on the adoption data and the perspectives mechanism.
+This video aims to provide context on the accession data and the perspectives mechanism.
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 0 - Enquadramento.mp4').default} controls/>}
 
@@ -27,7 +27,10 @@ This video shows additional features of the groups data table, namely filtering 
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 3 - Funcionalidades adicionais.mp4').default} controls/>}
 
-To import a CSV file with new rows, the column headers in the file must match each column's internal code, not the name shown in the table header.
+To import a CSV file with new rows, the column headers in the file must match each column's internal code, not the name shown in the table header. You can find example CSV files, with the headers only:
+
+- [Owners - Headers (CSV)](/files/groups_data/accession_owners_headers.csv)
+- [Properties - Headers (CSV)](/files/groups_data/accession_properties_headers.csv)
 
 ### Adding, Removing, and Merging Rows
 
