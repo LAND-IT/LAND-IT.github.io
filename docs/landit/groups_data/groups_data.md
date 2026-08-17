@@ -9,6 +9,18 @@ sidebar_position: 5
 
 ## Tutoriais em Vídeo
 
+### Enquadramento
+
+Este vídeo pretende oferecer um enquadramento sobre os dados da adesão e o mecanismo de perspetivas.
+
+{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 0 - Enquadramento.mp4').default} controls/>}
+
+### Visão Geral
+
+Este vídeo apresenta uma visão geral das tabelas de perspetivas na página de dados de agrupamento.
+
+{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 1 - Visão Geral.mp4').default} controls/>}
+
 ### Funcionalidades Adicionais
 
 Este vídeo mostra funcionalidades adicionais da tabela de dados de agrupamento, nomeadamente a filtragem e ordenação na tabela, a seleção, copiar e colar células e a importação e exportação de ficheiros CSV.
