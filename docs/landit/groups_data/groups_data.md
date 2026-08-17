@@ -27,16 +27,16 @@ Este vídeo mostra funcionalidades adicionais da tabela de dados de agrupamento,
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 2 - Funcionalidades adicionais.mp4').default} controls/>}
 
-### Edição de dados
-
-Este vídeo mostra como consultar e editar os dados de uma linha através do painel lateral, incluindo a abertura de uma linha em modo de leitura, a edição dos seus dados e a navegação entre as diferentes linhas.
-
-{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 3 - Edição de Dados.mov').default} controls/>}
-
 Para importar um ficheiro CSV com novas linhas, os cabeçalhos das colunas do ficheiro têm de corresponder ao código interno de cada coluna da tabela, e não ao nome apresentado no cabeçalho da tabela. Encontram-se aqui ficheiros CSV de exemplo, apenas com os cabeçalhos:
 
 - [Proprietários - Cabeçalhos (CSV)](/files/groups_data/accession_owners_headers.csv)
 - [Propriedades - Cabeçalhos (CSV)](/files/groups_data/accession_properties_headers.csv)
+
+### Edição de Dados
+
+Este vídeo mostra como consultar e editar os dados de uma linha através do painel lateral, incluindo a abertura de uma linha em modo de leitura, a edição dos seus dados e a navegação entre as diferentes linhas.
+
+{<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 3 - Edição de Dados.mov').default} controls/>}
 
 ### Adicionar, Remover e Juntar Linhas
 
@@ -44,7 +44,7 @@ Este vídeo mostra como gerir linhas na tabela de dados de agrupamento, desde ad
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 5 - Adicionar, remover e juntar linhas.mp4').default} controls/>}
 
-### Edição de moradas
+### Edição de Moradas
 
 Este vídeo mostra como editar moradas e como utilizar a funcionalidade de “Ver Morada” para consultar a morada associada aos dados.
 

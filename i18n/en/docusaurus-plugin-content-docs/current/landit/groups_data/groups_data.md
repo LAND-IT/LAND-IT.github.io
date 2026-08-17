@@ -27,16 +27,16 @@ This video shows additional features of the groups data table, namely filtering 
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 2 - Funcionalidades adicionais.mp4').default} controls/>}
 
+To import a CSV file with new rows, the column headers in the file must match each column's internal code, not the name shown in the table header. Here you can find example CSV files, with the headers only:
+
+- [Owners - Headers (CSV)](/files/groups_data/accession_owners_headers.csv)
+- [Properties - Headers (CSV)](/files/groups_data/accession_properties_headers.csv)
+
 ### Data Editing
 
 This video shows how to view and edit the data in a row using the sidebar, including opening a row in read-only mode, editing its data, and navigating between different rows.
 
 {<video style={{width:"100%"}} src={require('/videos/GroupsData/Tutorial 3 - Edição de Dados.mov').default} controls/>}
-
-To import a CSV file with new rows, the column headers in the file must match each column's internal code, not the name shown in the table header. Here you can find example CSV files, with the headers only:
-
-- [Owners - Headers (CSV)](/files/groups_data/accession_owners_headers.csv)
-- [Properties - Headers (CSV)](/files/groups_data/accession_properties_headers.csv)
 
 ### Adding, Removing, and Merging Rows
 
