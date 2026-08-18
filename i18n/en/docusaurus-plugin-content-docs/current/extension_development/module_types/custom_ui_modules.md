@@ -12,9 +12,10 @@ Their config takes the following fields:
 
 - **id** [required]: string to identify the module within the extension.
 - **type** [required]: "interface", for custom UI modules.
-- **subtype** [required]: the type of UI module, which dictates where it will appear in the frontend. Right now, the following subtypes are supported:
-  - `scenario-popup`: accessible from the scenario editing page.
-  - `singlestats-panel`: accessible from the scenario version statistics page.
+- **subtype** [required]: the type of UI module, which dictates where and how it will appear in the frontend. Right now, the following subtypes are supported:
+    - `scenario-popup`: opens the module in a (modal) pop-up, accessible from the scenario editing page.
+    - `scenario-panel`: opens the module in a panel, next to the map, in the scenario editing page. It does not block the rest of the interface, unlike the pop-up.
+    - `singlestats-panel`: accessible from the scenario version statistics page.
 - **component** [required]: name of the generated JS file that contains this module, as defined in the vite config (see further below for examples). It must not contain the ".js" file extension - for example, if the module is generated to a file named "ExamplePopup.js", then this field is simply "ExamplePopup".
 - **displayName**: user-friendly string that appears in the menus and as the header of the UI module.
 
@@ -42,6 +43,20 @@ Example of a custom UI module that appears in the scenario version statistics pa
     "displayName": "Modelos Económicos"
 }
 ```
+</details>
+
+<details>
+<summary>Module subtypes examples</summary>
+
+`scenario-popup`
+<img src={require('/static/images/extensions_development/scenario-popup-example.png').default} />
+
+`scenario-panel`
+<img src={require('/static/images/extensions_development/scenario-panel-example.png').default} />
+
+`singlestats-panel`
+<img src={require('/static/images/extensions_development/singlestats-panel-example.png').default} />
+
 </details>
 
 To communicate with the main application use the `landit-extensions-sdk` package (installed from `github:LAND-IT/sdk` as in the template), which contains an "api" object with several methods to retrieve information about the current scenario/version, layers and geometries. More information about it can be found [here](/docs/extension_development/api/extensions-sdk).

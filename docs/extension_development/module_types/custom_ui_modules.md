@@ -12,8 +12,9 @@ A sua configuração aceita os seguintes campos:
 
 - **id** [obrigatório]: *string* para identificar o módulo dentro da extensão.
 - **type** [obrigatório]: "interface", para módulos de UI personalizados.
-- **subtype** [obrigatório]: o tipo de módulo de UI, que dita onde aparecerá no *frontend*. Atualmente, são suportados os seguintes subtipos:
-    - `scenario-popup`: acessível a partir da página de edição de cenário.
+- **subtype** [obrigatório]: o tipo de módulo de UI, que dita onde e como o módulo aparecerá no *frontend*. Atualmente, são suportados os seguintes subtipos:
+    - `scenario-popup`: abre o módulo num pop-up (modal), acessível a partir da página de edição de cenário.
+    - `scenario-panel`: abre o módulo num painel, ao lado do mapa, na página de edição de cenário. Não bloqueia o resto da interface, ao contrário do pop-up.
     - `singlestats-panel`: acessível a partir da página de estatísticas da versão do cenário.
 - **component** [obrigatório]: nome do ficheiro JS gerado que contém este módulo, conforme definido na configuração do Vite (ver exemplos mais abaixo). Não deve conter a extensão de ficheiro ".js" — por exemplo, se o módulo for gerado para um ficheiro chamado "ExamplePopup.js", este campo será simplesmente "ExamplePopup".
 - **displayName**: *string* legível para o utilizador que aparece nos menus e como cabeçalho do módulo de UI.
@@ -42,6 +43,20 @@ Exemplo de um módulo de UI personalizado que aparece na página de estatística
     "displayName": "Modelos Económicos"
 }
 ```
+</details>
+
+<details>
+<summary>Exemplos dos subtipos de módulos</summary>
+
+`scenario-popup`
+<img src={require('/static/images/extensions_development/scenario-popup-example.png').default} />
+
+`scenario-panel`
+<img src={require('/static/images/extensions_development/scenario-panel-example.png').default} />
+
+`singlestats-panel`
+<img src={require('/static/images/extensions_development/singlestats-panel-example.png').default} />
+
 </details>
 
 Para comunicar com a aplicação principal, utiliza-se o pacote `landit-extensions-sdk` (instalado a partir de `github:LAND-IT/sdk` como no template), que contém um objeto "api" com vários métodos para obter informações sobre o cenário/versão atual, camadas e geometrias. Mais informação pode ser encontrada [aqui](/docs/extension_development/api/extensions-sdk).
